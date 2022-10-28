@@ -1,0 +1,75 @@
+$max-content-width: 1160px;
+$menu-active-color: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+
+@mixin menu-active {
+    background: $menu-active-color;
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    background: #FFFFFF;
+    &-content {
+
+    }
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #333B41;
+}
+
+.button {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    &_rounded {
+        border-radius: 25px;
+        padding: 0 1px 0 5px;
+        &:disabled {
+            background: #828282;
+        }
+    }
+    &_round {
+        border-radius: 50%;
+    }
+    &:hover {
+        background: #E47209;
+    }
+    &:active {
+        background: #4B9200;
+    }
+    &:disabled {
+        background: #767474;
+    }
+}
+
+.section-content {
+    max-width: $max-content-width;
+    margin: 0 auto;
+}

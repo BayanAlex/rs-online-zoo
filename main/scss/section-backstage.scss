@@ -1,0 +1,49 @@
+@import '../../assets/styles/scss/common.scss';
+
+.section {
+    &_backstage {
+        background: url('../assets/images/flower.png') 100% 12px no-repeat;
+    }
+    &-backstage-content {
+        
+    }
+
+}
+
+.backstage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 87px;
+    align-content: center;
+    padding: 140px 0 180px;
+    &__img {
+        width: 609px;
+        height: 403px;
+    }
+    &__content {
+        color: #333B41;
+    }
+    &__caption {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        padding-top: 20px;
+    }
+    &__subcaption {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        padding-top: 54px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        padding-top: 34px;
+    }
+}

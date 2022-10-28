@@ -1,97 +1,11 @@
 @import '../assets/styles/reset.css';
 @import '../assets/styles/normalize.css';
 @import '../assets/styles/fonts.css';
-
-$max-content-width: 1160px;
-
-@mixin menu-hover-color {
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.body {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    &-content {
-
-    }
-}
-
-.header {
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    &-content {
-        max-width: $max-content-width;
-        width: $max-content-width;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-}
-
-.main-menu {
-    width: 100%;
-    font-weight: 500;
-    &__list {
-        width: 100%;
-        position: relative;
-    }
-    &__item {
-        margin: 0 27px;
-        display: inline-block;
-        a, a:visited {
-            color: #fff;
-        }
-        a:hover {
-            @include menu-hover-color();
-        }
-        &_about {
-            a, a:visited {
-                @include menu-hover-color();
-            }
-        }
-        &:first-child {
-            margin-left: 63px;
-        }
-        &:last-child {
-            position: absolute;
-            right: 0;
-            margin-right: 0;
-        }
-    }
-}
-
-.logo {
-    position: relative;
-    box-sizing: border-box;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &__text {
-        width: 80px;
-        height: 50px;
-        padding-top: 3px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 19.0145px;
-        line-height: 120%;
-    }
-    &__icon {
-        position: absolute;
-        top: 23px;
-        left: 9px;
-        width: 12px;
-        height: 21px;
-    }
-}
+@import '../../assets/styles/scss/common.scss';
+@import '../../assets/styles/scss/header.scss';
+@import '../../assets/styles/scss/logo.scss';
+@import 'section-watch.scss';
+@import 'section-backstage.scss';
+@import 'section-pets.scss';
+@import 'section-pick.scss';
+@import 'section-testimonials.scss';

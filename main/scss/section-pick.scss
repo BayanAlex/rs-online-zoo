@@ -1,0 +1,94 @@
+.section {
+    &_pick {
+        background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+        opacity: 0.9;
+        height: 1004px;
+        padding: 69px 0 100px;
+    }
+    &-pick-content {
+        padding: 41px 0 59px;
+        height: 835px;
+        background: rgba(253, 253, 255, 0.52);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+    }
+}
+
+.pick {
+    &__caption {
+        color: #FE9013;
+        margin-bottom: 30px;
+    }
+    &__sub-caption {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #333B41;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #333B41;
+        position: relative;
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 60px;
+        }
+        span {
+            border-bottom: 1px solid #FE9013;
+            padding-bottom: 2px;
+        }
+        &-block {
+            margin-left: 99px;
+        }
+        &_bold{
+            font-weight: 500;
+        }
+    }
+    &__pay-caption {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.payment-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    &__arrow {
+        margin: 62px 31px 0 30px;
+    }
+}
+
+.payment-card {
+    width: 168px;
+    height: 244px;
+    &__img-wrap {
+        background: linear-gradient(to right bottom, #FA6F32, #FE9013);
+        padding: 1px;
+        border-radius: 5px;
+        width: 168px;
+        height: 168px;
+    }
+    &__img {
+        background: #FFFFFF;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        &_card {
+            padding: 54px 30px;
+        }
+        &_hand {
+            padding: 38px 41px 35px 41.23px;
+        }
+        &_monkey {
+            padding: 48px 21.25px 48.4px 22px;
+        }
+    }
+    &__text {
+        padding-top: 30px;
+    }
+}

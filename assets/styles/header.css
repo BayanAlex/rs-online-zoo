@@ -1,0 +1,111 @@
+.body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.button {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 5px;
+}
+.button_rounded {
+  border-radius: 25px;
+  padding: 0 1px 0 5px;
+}
+.button_rounded:disabled {
+  background: #828282;
+}
+.button:hover {
+  background: #E47209;
+}
+.button:active {
+  background: #4B9200;
+}
+.button:disabled {
+  background: #767474;
+}
+
+.section-content {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+.header-content {
+  max-width: 1160px;
+  width: 1160px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-menu {
+  width: 100%;
+  font-weight: 500;
+}
+.main-menu__list {
+  width: 100%;
+  position: relative;
+}
+.main-menu__item {
+  margin: 0 27px;
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+.main-menu__item:hover {
+  text-shadow: 0px 0px 5px #fff;
+  transition: all 0.1s ease-in;
+}
+.main-menu__item:not(:hover) {
+  transition: all 0.1s ease-out;
+}
+.main-menu__item a, .main-menu__item a:visited {
+  color: #fff;
+}
+.main-menu__item a:active {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main-menu__item a:active:hover {
+  text-shadow: 0px 0px 5px #E47209;
+}
+.main-menu__item_about a, .main-menu__item_about a:visited {
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main-menu__item_about:hover {
+  text-shadow: 0px 0px 5px #E47209;
+}
+.main-menu__item:first-child {
+  margin-left: 63px;
+}
+.main-menu__item:last-child {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}

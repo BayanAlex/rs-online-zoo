@@ -13,5 +13,11 @@
     "liveSassCompile.settings.generateMap": false
     "liveSassCompile.settings.autoprefix": [
         "defaults"
-    ]
+    ],
+	"liveSassCompile.settings.compileOnWatch":	true
+	"liveSassCompile.settings.watchOnLaunch": false
+	"liveSassCompile.settings.includeItems": [
+		"/main/scss/style.scss",
+		"/pages/donate/scss/style.scss",
+	]
 }

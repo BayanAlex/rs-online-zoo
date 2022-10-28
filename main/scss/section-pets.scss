@@ -1,0 +1,112 @@
+.section {
+    &_pets {
+        background: url('../../assets/images/palm.png') bottom left no-repeat, url('../../assets/images/strelitzia.png') bottom right no-repeat;
+    }
+    &-pets-content {
+
+    }
+}
+
+
+.pet-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+
+.pet-card {
+    // border: 1px solid #FA6F32;
+    border-radius: 5px;
+    overflow: hidden;
+    background: linear-gradient(to right bottom, #FA6F32, #FE9013);
+    padding: 1px;
+    &__content {
+        border-radius: 5px;
+        background-color: #fff;
+        overflow: hidden;
+        &:hover > .pet-card__img {
+            scale: 1.1;
+            transition: all 0.5s linear;
+            -webkit-filter: brightness(50%);
+        }
+        &:hover > .pet-card__description {
+            top: -47px;
+            background-color: #FE9013;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: all 0.5s linear;
+        }
+    }
+    &__img {
+        width: 366px;
+        height: 366px;
+        transition: all 0.5s linear;
+    }
+    &__description {
+        position: relative;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px 13px 16px;
+        top: 0;
+        left: 0;
+        transition: all 0.5s linear;
+    }
+    &__text {
+        color: #000000;
+        font-style: normal;
+    }
+    &__name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+    &__area {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+    }
+    &__food {
+        // width: 33px;
+        // height: 37px;
+    }
+}
+
+.pets {
+    &-block {
+        position: relative;
+    }
+    &-arrows {
+        display: flex;
+        justify-content: space-between;
+        width: calc($max-content-width + (62px + 20px) * 2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &-arrow {
+        width: 62px;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_right {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.choose-fav-button {
+    margin: 80px auto 100px;
+}
+
+.center-wrap {
+    display: flex;
+    justify-content: center;
+}
