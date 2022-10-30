@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import '../assets/styles/reset.css';
-@import '../assets/styles/normalize.css';
-@import '../assets/styles/fonts.css';
+@import 'assets/styles/reset.css';
+@import 'assets/styles/normalize.css';
+@import 'assets/styles/fonts.css';
 .body {
   font-family: "Roboto";
   font-style: normal;
@@ -158,7 +158,7 @@ h3 {
 }
 
 .section_watch {
-  background: url("../assets/images/panda.png") 0 -80px/cover no-repeat;
+  background: url("assets/images/panda.png") 0 -80px/cover no-repeat;
   height: 700px;
 }
 .section-watch-content {
@@ -201,68 +201,8 @@ h3 {
   left: -73px;
 }
 
-.body {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  background: #FFFFFF;
-}
-h2 {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 120%;
-  text-align: center;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 130%;
-  text-align: center;
-  color: #333B41;
-}
-
-.button {
-  width: 298px;
-  height: 54px;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 5px;
-}
-.button_rounded {
-  border-radius: 25px;
-  padding: 0 1px 0 5px;
-}
-.button_rounded:disabled {
-  background: #828282;
-}
-.button_round {
-  border-radius: 50%;
-}
-.button:hover {
-  background: #E47209;
-}
-.button:active {
-  background: #4B9200;
-}
-.button:disabled {
-  background: #767474;
-}
-
-.center-content {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
 .section_backstage {
-  background: url("../assets/images/flower.png") 100% 12px no-repeat;
+  background: url("assets/images/flower.png") 100% 12px no-repeat;
 }
 .backstage {
   display: grid;
@@ -307,7 +247,7 @@ h3 {
 }
 
 .section_pets {
-  background: url("../../assets/images/palm.png") bottom left no-repeat, url("../../assets/images/strelitzia.png") bottom right no-repeat;
+  background: url("assets/images/palm.png") bottom left no-repeat, url("assets/images/strelitzia.png") bottom right no-repeat;
 }
 .pet-cards {
   display: grid;
@@ -537,7 +477,7 @@ h3 {
 }
 
 .section_testimonials {
-  background: url("../../assets/images/leaf.png") 100% 126% no-repeat;
+  background: url("assets/images/leaf.png") 100% 126% no-repeat;
 }
 .section-testimonials-content {
   padding: 142px 0 180px;
