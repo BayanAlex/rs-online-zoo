@@ -25,7 +25,7 @@
     background: linear-gradient(to right bottom, #FA6F32, #FE9013);
     z-index: 1;
     &:hover &__img {
-        scale: 1.1;
+        scale: 1.05;
         transition: all 0.5s linear;
         -webkit-filter: brightness(50%);
     }
@@ -54,7 +54,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6px 7px 11px 15px;
+        padding: 5px 7px 12px 15px;
         top: 0;
         left: 0;
         transition: all 0.5s linear;

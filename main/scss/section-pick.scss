@@ -27,12 +27,14 @@
         margin-bottom: 41px;
     }
     &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 130%;
-        color: #333B41;
+        &, & a, & a:visited {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #333B41;
+        }
         position: relative;
-        span {
+        a {
             border-bottom: 1px solid #FE9013;
             padding-bottom: 2px;
         }

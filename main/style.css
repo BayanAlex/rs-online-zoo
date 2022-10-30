@@ -327,7 +327,7 @@ h3 {
   z-index: 1;
 }
 .pet-card:hover .pet-card__img {
-  scale: 1.1;
+  scale: 1.05;
   transition: all 0.5s linear;
   -webkit-filter: brightness(50%);
 }
@@ -356,7 +356,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 7px 11px 15px;
+  padding: 5px 7px 12px 15px;
   top: 0;
   left: 0;
   transition: all 0.5s linear;
@@ -444,13 +444,15 @@ h3 {
   margin-bottom: 41px;
 }
 .pick__text {
+  position: relative;
+}
+.pick__text, .pick__text a, .pick__text a:visited {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
   color: #333B41;
-  position: relative;
 }
-.pick__text span {
+.pick__text a {
   border-bottom: 1px solid #FE9013;
   padding-bottom: 2px;
 }
@@ -535,14 +537,14 @@ h3 {
 }
 
 .section_testimonials {
-  background: url("../../assets/images/leaf.png") 100% 127% no-repeat;
+  background: url("../../assets/images/leaf.png") 100% 126% no-repeat;
 }
 .section-testimonials-content {
-  padding: 140px 0 180px;
+  padding: 142px 0 180px;
 }
 
 .testimonials__caption {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 }
 
 .testimonials-block {
@@ -608,7 +610,7 @@ h3 {
   border-radius: 19px;
   width: 100%;
   height: 100%;
-  padding: 14px 13px 17px 14px;
+  padding: 13px 13px 17px 14px;
 }
 .testimonial-card__header {
   display: flex;
@@ -625,16 +627,18 @@ h3 {
   margin-bottom: 1px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 120%;
 }
 .testimonial-card__info {
   display: inline-block;
   color: #BDBDBD;
   font-weight: 300;
   font-size: 15px;
+  line-height: 120%;
 }
 .testimonial-card__info_location:after {
   content: "•";
-  margin: 0 5px 0 6px;
+  margin: 0 1px 0 8px;
 }
 .testimonial-card__text {
   color: #767474;
@@ -658,7 +662,7 @@ h3 {
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.2;
   color: #FFFFFF;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -711,6 +715,9 @@ h3 {
   align-items: end;
 }
 
+.main-menu {
+  margin-bottom: 2px;
+}
 .main-menu__list_footer {
   display: flex;
   justify-content: center;
@@ -722,7 +729,7 @@ h3 {
 
 .subscribe__caption {
   display: block;
-  margin-bottom: 14px;
+  margin: 1px 0 13px 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 120%;
@@ -820,11 +827,11 @@ h3 {
   background: rgba(196, 196, 196, 0.5);
   margin-right: 12px;
 }
-.social-link__icon__img_fb {
-  width: 8px;
-  height: 16px;
+.social-link__img_youtube {
+  margin-top: -1px;
 }
 .social-link__name {
+  margin-top: 3px;
   font-weight: 400;
   font-size: 16px;
   color: #FFFFFF;

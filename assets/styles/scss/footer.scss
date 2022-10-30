@@ -8,7 +8,7 @@
         font-style: normal;
         font-weight: 100;
         font-size: 16px;
-        line-height: 1;
+        line-height: 1.2;
         color: #FFFFFF;
         width: fit-content;
         display: flex;
@@ -61,6 +61,7 @@
 }
 
 .main-menu {
+    margin-bottom: 2px;
     &__list_footer {
         display: flex;
         justify-content: center;
@@ -74,7 +75,7 @@
 .subscribe {
     &__caption {
         display: block;
-        margin-bottom: 14px;
+        margin: 1px 0 13px 0;
         font-weight: 400;
         font-size: 24px;
         line-height: 120%;
@@ -165,14 +166,14 @@
         border-radius: 50%;
         background: rgba(196, 196, 196, 0.5);
         margin-right: 12px;
-        &__img {
-            &_fb {
-                width: 8px;
-                height: 16px;
-            }
+    }
+    &__img {
+        &_youtube {
+            margin-top: -1px;
         }
     }
     &__name {
+        margin-top: 3px;
         font-weight: 400;
         font-size: 16px;
         color: #FFFFFF;
