@@ -5,7 +5,7 @@
         background: url('../assets/images/flower.png') 100% 12px no-repeat;
     }
     &-backstage-content {
-        
+
     }
 
 }
@@ -14,11 +14,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 87px;
-    align-content: center;
+    align-items: start;
     padding: 140px 0 180px;
+    height: 723px;
     &__img {
         width: 609px;
         height: 403px;
+        margin-left: -1px;
     }
     &__content {
         color: #333B41;
@@ -27,23 +29,25 @@
         font-weight: 400;
         font-size: 48px;
         line-height: 120%;
+        text-align: left;
     }
     &__description {
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
-        padding-top: 20px;
+        padding-top: 22px;
     }
     &__subcaption {
         font-weight: 400;
         font-size: 24px;
         line-height: 120%;
         padding-top: 54px;
+        text-align: left;
     }
     &__text {
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
-        padding-top: 34px;
+        padding-top: 33px;
     }
 }

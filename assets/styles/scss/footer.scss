@@ -1,0 +1,180 @@
+.footer {
+    background: #111115;
+    &-content {
+        max-width: $max-content-width;
+        padding: 40px 0 50px;
+    }
+    &__copyright {
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 1;
+        color: #FFFFFF;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-self: end;
+        transition: all 0.1s ease-out;
+        p {
+            position: relative;
+            white-space: nowrap;
+        }
+        &:not(:hover) {
+            transition: all 0.1s ease-out;
+        }
+        &:hover:not(:active) {
+            text-shadow: 0px 0px 5px #fff;
+            transition: all 0.1s ease-in;
+        }
+        p:first-of-type {
+            margin-bottom: 12.4px;
+        }
+        &:active {
+            transition: all 0.1s ease-in;
+            color: #4B9200;
+            p::after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #4B9200;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                transition: all 0.1s ease-in;
+            }
+        }
+    }
+    &__donate-button {
+        margin: 36px 0 44px;
+    }
+    &__row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__row2 {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: end;
+    }
+}
+
+.main-menu {
+    &__list_footer {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+    &__item_footer {
+        margin: 0 29px;
+    }
+}
+
+.subscribe {
+    &__caption {
+        display: block;
+        margin-bottom: 14px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+    &__email {
+        display: inline-block;
+        width: 228px;
+        height: 42px;
+        border-radius: 2px;
+        border: 0.7px solid #F9804B;
+        color: #F9804B;
+        padding: 10px;
+        background-color: transparent;
+        margin-right: 6px;
+        &:focus {
+            border-color: #4B9200;
+            color: #4B9200;
+        }
+        &:not([value=""]):not(:focus):invalid {
+            border-color: #D31414;
+            color: #D31414;
+        }
+        &:invalid ~ button {
+            border-color: #D31414;
+            color: #D31414;
+            pointer-events: none;
+        }
+        &::placeholder {
+            color: #BDBDBD;
+        }
+    }
+    &__submit {
+        display: inline-block;
+        width: 129px;
+        height: 42px;
+        background: #F1F3F2;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+        border: 1px solid #333B41;
+        margin-bottom: 0;
+        &:active {
+            color: #4B9200;
+            border-color: 1px solid #4B9200;
+        }
+    }
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    transition: all 0.1s ease-out;
+    &:hover:not(:active) {
+        text-shadow: 0px 0px 5px #fff;
+        transition: all 0.1s ease-in;
+    }
+    &:hover:not(:active) &__icon {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+        box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+        transition: all 0.1s ease-in;
+    }
+    &:active &__name {
+        color: #4B9200;
+        transition: all 0.1s ease-in;
+    }
+    &:active &__icon {
+        background-color: #4B9200;
+        transition: all 0.1s ease-in;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: rgba(196, 196, 196, 0.5);
+        margin-right: 12px;
+        &__img {
+            &_fb {
+                width: 8px;
+                height: 16px;
+            }
+        }
+    }
+    &__name {
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}

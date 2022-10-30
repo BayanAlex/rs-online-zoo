@@ -10,34 +10,38 @@
 
 .pet-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 20px;
+    overflow: hidden;
 }
 
 .pet-card {
-    // border: 1px solid #FA6F32;
+    width: 366px;
+    height: 426px;
     border-radius: 5px;
     overflow: hidden;
     background: linear-gradient(to right bottom, #FA6F32, #FE9013);
-    padding: 1px;
-    &__content {
+    z-index: 1;
+    &:hover &__img {
+        scale: 1.1;
+        transition: all 0.5s linear;
+        -webkit-filter: brightness(50%);
+    }
+    &:hover &__description {
+        top: -47px;
+        background-color: #FE9013;
+        opacity: 0.8;
         border-radius: 5px;
+        margin: 0 5px;
+        transition: all 0.5s linear;
+    }
+    &__content {
+        margin: 1px;
+        border-radius: 4px;
         background-color: #fff;
         overflow: hidden;
-        &:hover > .pet-card__img {
-            scale: 1.1;
-            transition: all 0.5s linear;
-            -webkit-filter: brightness(50%);
-        }
-        &:hover > .pet-card__description {
-            top: -47px;
-            background-color: #FE9013;
-            border-radius: 5px;
-            margin: 0 5px;
-            transition: all 0.5s linear;
-        }
     }
     &__img {
         width: 366px;
@@ -46,11 +50,11 @@
     }
     &__description {
         position: relative;
-        height: 60px;
+        height: 58px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 12px 13px 16px;
+        padding: 6px 7px 11px 15px;
         top: 0;
         left: 0;
         transition: all 0.5s linear;
@@ -69,11 +73,19 @@
     &__area {
         font-weight: 300;
         font-size: 15px;
-        line-height: 120%;
     }
     &__food {
-        // width: 33px;
-        // height: 37px;
+        width: 48px;
+        height: 38px;
+        &-img {
+            &_meat-fish {
+
+            }
+            &_banana-bamboo {
+                margin-left: 11px;
+                margin-top: 2px;
+            }
+        }
     }
 }
 
@@ -81,16 +93,17 @@
     &-block {
         position: relative;
     }
-    &-arrows {
+    &__arrows {
         display: flex;
         justify-content: space-between;
-        width: calc($max-content-width + (62px + 20px) * 2);
+        width: calc($max-content-width + (62px + 20px) * 2 - 2px);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 0;
     }
-    &-arrow {
+    &__arrow {
         width: 62px;
         height: 62px;
         display: flex;
@@ -100,10 +113,9 @@
             transform: rotate(180deg);
         }
     }
-}
-
-.choose-fav-button {
-    margin: 80px auto 100px;
+    &__button-choose-fav {
+        margin: 80px auto 100px;
+    }
 }
 
 .center-wrap {
