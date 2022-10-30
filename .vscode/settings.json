@@ -17,7 +17,7 @@
 	"liveSassCompile.settings.compileOnWatch":	true
 	"liveSassCompile.settings.watchOnLaunch": false
 	"liveSassCompile.settings.includeItems": [
-		"/main/scss/style.scss",
+		"/scss/style.scss",
 		"/pages/donate/scss/style.scss",
 	]
 }
