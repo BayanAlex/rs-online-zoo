@@ -527,6 +527,7 @@ h3 {
   height: 6px;
   background: #FE9013;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
