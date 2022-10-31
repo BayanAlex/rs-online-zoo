@@ -1,0 +1,283 @@
+.section {
+    &_donate {
+        background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    }
+    &-donate-content {
+        width: 100%;
+        height: 100%;
+        padding: 40px 0 180px 0;
+    }
+}
+
+.donate {
+    &__caption {
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+    &__info-caption {
+        color: #FE9013;
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+.pick {
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 40px 92px 62px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__caption {
+        color: #FE9013;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #333B41;
+        margin-top: 20px;
+    }
+    &__animal-diet {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 60px;
+        padding-right: 14px;
+        width: 100%;
+    }
+    &__amount-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+        margin: 48px 0 17px 4px;
+        width: 100%;
+    }
+    &__amount-select {
+        width: 100%;
+    }
+    &__diet-days {
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 80%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 11px;
+    }
+    &__diet-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #333B41;
+    }
+    &__diet-count {
+        margin-top: 105px;
+    }
+    &__x {
+        width: 14px;
+        height: 14px;
+        color: #333B41;
+        margin: 130px 64px 0 11px;
+    }
+    &__animal-img {
+        img {
+            width: 284px;
+            height: 246px
+        }
+    }
+    &__amount {
+        &-selectors {
+            width: 100%;
+            height: 27px;
+            background: #404950;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px 0 11px;
+            position: relative;
+        }
+        &-line {
+            height: 2px;
+            width: calc(100% - 60px);
+            background: #72828E;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto 30px;
+        }
+        &-item {
+            position: relative;
+            width: 40px;
+            height: 40px;
+        }
+        &-radio {
+            z-index: 1;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                background: #FFEE2E;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                border: none;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+            &:checked, &:checked::before{
+                border: 2px solid #FE9013;
+            }
+            &:checked + label {
+                color: #FE9013;
+            }
+            &:checked + label div {
+                background-color: #FE9013;
+            }
+        }
+        &-label {
+            position: absolute;
+            top: 39px;
+            left: -20px;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #333B41;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        &-dollar {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            margin-top: 8px;
+            margin-right: 2px;
+            vertical-align: top;
+            background-color: #333B41;
+            -webkit-mask-image: url('../../assets/icons/dollar.svg');
+            mask-image: url('../../assets/icons/dollar.svg');
+        }
+    }
+    &__period {
+        margin-top: 26px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        &-radio {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #FE9013;
+            transition: 0.2s all linear;
+            outline: none;
+            margin-right: 10px;
+            position: relative;
+            top: 2px;
+            &:checked {
+                background: #4B9200;
+                border: 1px solid #4B9200;
+            }
+        }
+        &-label {
+            &:first-of-type {
+                margin-right: 50px;
+            }
+        }
+    }
+    &__feed-button {
+        margin-top: 30px;
+    }
+    &__share-text {
+        margin-top: 30px;
+    }
+}
+
+.amount-input {
+    margin-top: 98px;
+    position: relative;
+    &__input {
+        width: 268px;
+        height: 54px;
+        border: 1px solid #929699;
+        color: #929699;
+        background-color: transparent;
+        border-radius: 2px;
+        padding-left: 9px;
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+        &:focus:valid, &:focus:valid::placeholder {
+            border-color: #4B9200;
+            color: #4B9200;
+        }
+        &:focus:valid + div {
+            background-color: #4B9200;
+        }
+        &:invalid {
+            border-color: #D31414;
+            color: #D31414;
+        }
+        &:invalid + div{
+            background-color: #D31414;
+        }
+    }
+    &__dollar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+        width: 10px;
+        height: 20px;
+        background-color: #929699;
+        -webkit-mask: url('../../assets/icons/dollar.svg') no-repeat center;
+        mask: url('../../assets/icons/dollar.svg') no-repeat center;
+    }
+}
