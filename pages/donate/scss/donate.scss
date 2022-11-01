@@ -7,18 +7,28 @@
         height: 100%;
         padding: 40px 0 180px 0;
     }
+    &_pic {
+        background: url('../../assets/images/panda_bg2.png') 0 -4px/cover no-repeat;
+        height: 386px;
+        width: 100%;
+    }
 }
 
 .donate {
     &__caption {
         color: #FFFFFF;
+        text-align: left;
     }
     &__text {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 16px;
         line-height: 140%;
         color: #FFFFFF;
         margin-top: 10px;
+        padding-bottom: 5px;
+        &_bold {
+            font-weight: 500;
+        }
     }
     &__info-caption {
         color: #FE9013;
@@ -31,7 +41,7 @@
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    padding: 40px 92px 62px;
+    padding: 40px 92px 61px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -45,6 +55,8 @@
         line-height: 120%;
         color: #333B41;
         margin-top: 20px;
+        width: 100%;
+        text-align: left;
     }
     &__animal-diet {
         display: flex;
@@ -59,7 +71,7 @@
         font-size: 16px;
         line-height: 140%;
         color: #000000;
-        margin: 48px 0 17px 4px;
+        margin: 48px 0 17px 6px;
         width: 100%;
     }
     &__amount-select {
@@ -172,8 +184,8 @@
         }
         &-label {
             position: absolute;
-            top: 39px;
-            left: -20px;
+            top: 46px;
+            left: -11px;
             font-weight: 500;
             font-size: 26px;
             line-height: 140%;
@@ -186,7 +198,7 @@
             display: inline-block;
             width: 10px;
             height: 20px;
-            margin-top: 8px;
+            margin-top: 9px;
             margin-right: 2px;
             vertical-align: top;
             background-color: #333B41;
@@ -195,10 +207,12 @@
         }
     }
     &__period {
-        margin-top: 26px;
+        margin-top: 25px;
+        margin-left: 5px;
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
+        width: fit-content;
         &-radio {
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -218,8 +232,12 @@
             }
         }
         &-label {
+            cursor: pointer;
+            display: inline-block;
+            width: 84px;
+            height: 21px;
             &:first-of-type {
-                margin-right: 50px;
+                margin-right: 46px;
             }
         }
     }
@@ -228,6 +246,9 @@
     }
     &__share-text {
         margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
     }
 }
 
@@ -241,7 +262,7 @@
         color: #929699;
         background-color: transparent;
         border-radius: 2px;
-        padding-left: 9px;
+        padding-left: 8px;
         /* Chrome, Safari, Edge, Opera */
         &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
             -webkit-appearance: none;
