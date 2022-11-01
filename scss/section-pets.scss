@@ -1,6 +1,6 @@
 .section {
     &_pets {
-        background: url('assets/images/palm.png') bottom left no-repeat, url('assets/images/strelitzia.png') bottom right no-repeat;
+        background: url('assets/images/palm.png') -588px 100% no-repeat, url('assets/images/strelitzia.png') bottom right no-repeat;
     }
     &-pets-content {
 
@@ -121,4 +121,34 @@
 .center-wrap {
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: $media2) {
+    .section_pets {
+        background: url('assets/images/palm.png') -192px 100%/386px 202px no-repeat, url('assets/images/strelitzia.png') bottom right/241px 180px no-repeat;
+    }
+
+    .pets {
+        &__arrows {
+            width: 294px;
+        }
+        &__button-choose-fav {
+            margin-bottom: 140px;
+        }
+    }
+
+    .pet-cards {
+        grid-column-gap: 29px;
+        grid-row-gap: 92px;
+    }
+
+    .pet-card {
+        width: 294px;
+        height: 354px;
+        &__img {
+            width: 294px;
+            height: 294px;
+        }
+    }
 }

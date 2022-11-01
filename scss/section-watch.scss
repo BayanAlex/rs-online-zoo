@@ -1,6 +1,6 @@
 .section {
     &_watch {
-        background: url('assets/images/panda_bg1.png') 0 -80px/cover no-repeat;
+        background: url('assets/images/panda_bg1.png') center/cover no-repeat;
         height: 700px;
     }
     &-watch {
@@ -12,12 +12,12 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            z-index: 0;
         }
         &__button {
             margin-left: 4.7px;
         }
         &__text {
+            z-index: 0;
             position: relative;
             margin: 86px 0 60px 0;
             width: 500.31px;
@@ -44,4 +44,35 @@
             }
         }
     }
+}
+
+@media screen and (max-width: $media2) {
+    .section {
+        &_watch {
+            // background: url('assets/images/panda_bg1.png') 0 -80px/cover no-repeat;
+            height: 504px;
+        }
+        &-watch {
+            &__text {
+                margin: 42.8px 0 40.2px 0;
+            }
+            &-content {
+                margin-right: 85.75px;
+            }
+            &__text {
+                font-weight: 700;
+                font-size: 85px;
+                line-height: 75%;
+                width: 400.25px;
+                height: 320px;
+                &::before {
+                    width: 367px;
+                    height: 367px;
+                    top: -53.8px;
+                    left: -58px;
+                }
+            }
+        }
+    }
+
 }

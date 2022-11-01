@@ -45,3 +45,19 @@
         }
     }
  }
+
+ @media screen and (max-width: $media2) {
+    .main-menu {
+        &__item {
+            margin: 0 22px;
+            &_margin-left {
+                margin-left: 63px;
+            }
+            &_align-right {
+                position: absolute;
+                right: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}

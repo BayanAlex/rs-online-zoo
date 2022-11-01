@@ -2,12 +2,12 @@
     &_pick {
         background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
         opacity: 0.9;
-        height: 1004px;
+        // height: 1004px;
         padding: 69px 0 100px;
     }
     &-pick-content {
         padding: 41px 0 59px;
-        height: 835px;
+        // height: 835px;
         background: rgba(253, 253, 255, 0.52);
         backdrop-filter: blur(2px);
         border-radius: 20px;
@@ -40,6 +40,7 @@
         }
         &-block {
             margin-left: 99px;
+            margin-bottom: 60px;
         }
         &_bold{
             font-weight: 500;
@@ -47,7 +48,7 @@
         }
         &_main {
             width: 863px;
-            height: 102px;
+            height: 42px;
         }
     }
     &__pay-caption {
@@ -117,5 +118,34 @@
         font-size: 16px;
         line-height: 140%;
         color: #333B41;
+    }
+}
+
+@media screen and (max-width: $media2) {
+    .section {
+        &_pick {
+            padding: 30px 0 50px;
+        }
+        &-pick-content {
+            padding: 30px 0 50px;
+        }
+    }
+    .pick {
+        &__text {
+            &-block {
+                margin-left: 49px;
+                margin-bottom: 40px;
+            }
+            width: 815px;
+        }
+        &__caption {
+            margin-bottom: 20px;
+        }
+        &__sub-caption {
+            margin-bottom: 21px;
+        }
+    }
+    .payment-block {
+        margin-bottom: 70px;
     }
 }

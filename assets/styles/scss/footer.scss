@@ -1,7 +1,6 @@
 .footer {
     background: #111115;
     &-content {
-        max-width: $max-content-width;
         padding: 40px 0 50px;
     }
     &__copyright {
@@ -177,5 +176,32 @@
         font-weight: 400;
         font-size: 16px;
         color: #FFFFFF;
+    }
+}
+
+.main-menu {
+    margin-bottom: 2px;
+    &__list_footer {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+    &__item_footer {
+        margin: 0 29px;
+    }
+}
+
+@media screen and (max-width: $media2) {
+    .subscribe {
+        margin-right: 32px;
+    }
+
+    .main-menu {
+        &__item {
+            margin: 0 24px;
+            &:first-of-type {
+                margin-left: 0px;
+            }
+        }
     }
 }

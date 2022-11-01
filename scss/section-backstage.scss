@@ -12,9 +12,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 87px;
-    align-items: start;
+    align-items: center;
     padding: 140px 0 180px;
-    height: 723px;
+    // height: 723px;
     &__img {
         width: 609px;
         height: 403px;
@@ -48,4 +48,26 @@
         line-height: 140%;
         padding-top: 33px;
     }
+}
+
+@media screen and (max-width: $media1) {
+    .section {
+        &_backstage {
+            background: none;
+        }
+    }
+}
+
+@media screen and (max-width: $media2) {
+    .backstage {
+        grid-column-gap: 31px;
+        padding: 100px 0 142px;
+        &__img {
+            margin-left: 0;
+            width: 455px;
+            height: 408px;
+            object-fit: cover;
+        }
+    }
+
 }
