@@ -57,17 +57,19 @@ h3 {
 }
 
 .center-content {
-  max-width: 1160px;
+  max-width: 1220px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1360px) {
   .center-content {
-    max-width: 940px;
+    max-width: 1000px;
   }
 }
 .header {
-  background-color: #000;
+  background-color: #111115;
   color: #fff;
   height: 80px;
   position: relative;
@@ -182,10 +184,11 @@ h3 {
 .section-donate-content {
   width: 100%;
   height: 100%;
-  padding: 40px 0 180px 0;
+  padding-top: 40px;
+  padding-bottom: 180px;
 }
 .section_pic {
-  background: url("../../assets/images/panda_bg2.png") 0 -4px/cover no-repeat;
+  background: url("../../assets/images/panda_bg2.png") center/cover no-repeat;
   height: 386px;
   width: 100%;
 }
@@ -242,12 +245,15 @@ h3 {
   padding-right: 14px;
   width: 100%;
 }
+.pick__amount {
+  margin-top: 48px;
+}
 .pick__amount-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #000000;
-  margin: 48px 0 17px 6px;
+  margin: 0 0 16px 6px;
   width: 100%;
 }
 .pick__amount-select {
@@ -281,6 +287,9 @@ h3 {
 .pick__animal-img img {
   width: 284px;
   height: 246px;
+}
+.pick__amount {
+  width: 100%;
 }
 .pick__amount-selectors {
   width: 100%;
@@ -484,11 +493,56 @@ h3 {
   mask: url("../../assets/icons/dollar.svg") no-repeat center;
 }
 
+@media screen and (max-width: 1360px) {
+  .section-donate-content {
+    padding-bottom: 30px;
+  }
+  .section_pic {
+    background: url("../../assets/images/panda_bg2.png") -172px 0/cover no-repeat;
+    height: 390px;
+  }
+  .donate__caption {
+    margin-right: 162px;
+  }
+  .donate__text {
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
+  .pick {
+    padding: 20px 0 45px;
+    margin-top: 40px;
+  }
+  .pick__text {
+    margin-top: 11px;
+    padding: 0 47px;
+  }
+  .pick__amount {
+    padding: 0 65px;
+  }
+  .pick__amount-selectors {
+    padding: 0;
+  }
+  .pick__amount-selectors div:nth-child(2) {
+    display: none;
+  }
+  .pick__amount-text {
+    margin-left: 0;
+  }
+  .pick__amount-line {
+    width: calc(100% - 30px);
+    margin: auto 15px;
+  }
+  .pick__amount-label {
+    top: 46px;
+    left: 3px;
+  }
+}
 .footer {
   background: #111115;
 }
 .footer-content {
-  padding: 40px 0 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .footer__copyright {
   font-style: normal;
@@ -685,10 +739,7 @@ h3 {
   .subscribe {
     margin-right: 32px;
   }
-  .main-menu__item {
+  .main-menu__item_footer {
     margin: 0 24px;
-  }
-  .main-menu__item:first-of-type {
-    margin-left: 0px;
   }
 }

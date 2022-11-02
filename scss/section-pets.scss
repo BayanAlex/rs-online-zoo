@@ -96,7 +96,7 @@
     &__arrows {
         display: flex;
         justify-content: space-between;
-        width: calc($max-content-width + (62px + 20px) * 2 - 2px);
+        width: calc($max-content-width + (62px + 20px) * 2 - 2px - 60px);
         position: absolute;
         top: 50%;
         left: 50%;

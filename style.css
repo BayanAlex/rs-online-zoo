@@ -58,17 +58,19 @@ h3 {
 }
 
 .center-content {
-  max-width: 1160px;
+  max-width: 1220px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 1360px) {
   .center-content {
-    max-width: 940px;
+    max-width: 1000px;
   }
 }
 .header {
-  background-color: #000;
+  background-color: #111115;
   color: #fff;
   height: 80px;
   position: relative;
@@ -229,7 +231,7 @@ h3 {
     margin: 42.8px 0 40.2px 0;
   }
   .section-watch-content {
-    margin-right: 85.75px;
+    margin-right: 55.75px;
   }
   .section-watch__text {
     font-weight: 700;
@@ -253,7 +255,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 87px;
   align-items: center;
-  padding: 140px 0 180px;
+  padding: 140px 0 176px;
 }
 .backstage__img {
   width: 609px;
@@ -446,14 +448,14 @@ h3 {
   opacity: 0.9;
   padding: 69px 0 100px;
 }
-.section-pick-content {
-  padding: 41px 0 59px;
+.pick {
   background: rgba(253, 253, 255, 0.52);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   border-radius: 20px;
+  padding-top: 41px;
+  padding-bottom: 59px;
 }
-
 .pick__caption {
   color: #FE9013;
   margin-bottom: 31px;
@@ -563,8 +565,9 @@ h3 {
   .section_pick {
     padding: 30px 0 50px;
   }
-  .section-pick-content {
-    padding: 30px 0 50px;
+  .pick {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
   .pick__text {
     width: 815px;
@@ -586,12 +589,12 @@ h3 {
 .section_testimonials {
   background: url("assets/images/leaf.png") 100% 126% no-repeat;
 }
-.section-testimonials-content {
-  padding: 142px 0 180px;
+.testimonials {
+  padding-top: 142px;
+  padding-bottom: 180px;
 }
-
 .testimonials__caption {
-  margin-bottom: 45px;
+  margin-bottom: 46px;
 }
 
 .testimonials-block {
@@ -692,17 +695,16 @@ h3 {
   margin: 0 1px 0 8px;
 }
 .testimonial-card__text {
+  height: 309px;
   color: #767474;
   margin-top: 10px;
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1360px) {
-  .section-testimonials-content {
-    padding: 102px 0 140px;
-  }
   .section_testimonials {
     background: url("assets/images/leaf.png") 100% 116%/196.2px 324px no-repeat;
   }
@@ -723,6 +725,10 @@ h3 {
     margin-right: 30px;
     flex-basis: 293px;
   }
+  .testimonials {
+    padding-top: 102px;
+    padding-bottom: 140px;
+  }
   .testimonials__caption {
     margin-bottom: 28px;
   }
@@ -731,7 +737,8 @@ h3 {
   background: #111115;
 }
 .footer-content {
-  padding: 40px 0 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .footer__copyright {
   font-style: normal;
@@ -928,10 +935,7 @@ h3 {
   .subscribe {
     margin-right: 32px;
   }
-  .main-menu__item {
+  .main-menu__item_footer {
     margin: 0 24px;
-  }
-  .main-menu__item:first-of-type {
-    margin-left: 0px;
   }
 }

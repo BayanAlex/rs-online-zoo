@@ -1,7 +1,8 @@
 .footer {
     background: #111115;
     &-content {
-        padding: 40px 0 50px;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
     &__copyright {
         font-style: normal;
@@ -197,10 +198,10 @@
     }
 
     .main-menu {
-        &__item {
+        &__item_footer {
             margin: 0 24px;
             &:first-of-type {
-                margin-left: 0px;
+                // margin-left: 0px;
             }
         }
     }
