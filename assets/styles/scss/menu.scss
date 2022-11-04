@@ -1,20 +1,25 @@
 .main-menu {
     width: 100%;
     font-weight: 500;
+    line-height: 140%;
     &__list {
         width: 100%;
         position: relative;
+        display: flex;
+        justify-content: flex-start;
     }
     &__item {
-        margin: 0 27px;
+        margin: 0 29px;
         display: inline-block;
         position: relative;
         top: 0;
-        &:hover:not(:active) {
-            text-shadow: 0px 0px 5px #fff;
+        white-space: nowrap;
+        a:hover:not(:active) {
+            color: #E47209;
+            text-shadow: 0px 0px 2px #E47209;
             transition: all 0.1s ease-in;
         }
-        &:not(:hover) {
+        a:not(:hover) {
             transition: all 0.1s ease-out;
         }
         a, a:visited {
@@ -31,32 +36,85 @@
                 @include menu-active();
             }
             a:hover:not(:active) {
-                text-shadow: 0px 0px 5px #E47209;
+                text-shadow: 0px 0px 2px #E47209;
                 transition: all 0.1s ease-in;
             }
         }
-        &_margin-left {
-            margin-left: 63px;
-        }
-        &_align-right {
-            position: absolute;
-            right: 0;
-            margin-right: 0;
+    }
+    // &:first-of-type {
+    //     margin-left: 0;
+    // }
+    &_header {
+        .main-menu__item {
+            &:last-of-type {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                margin: 0;
+            }
+            &:first-of-type {
+                margin-left: 0;
+            }
         }
     }
- }
+}
 
- @media screen and (max-width: $media2) {
+@media screen and (max-width: $media2) {
     .main-menu {
         &__item {
-            margin: 0 22px;
-            &_margin-left {
-                margin-left: 63px;
-            }
+            margin: 0 24px;
             &_align-right {
                 position: absolute;
                 right: 0;
                 margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .main-menu_header {
+        padding: 10px 10px 40px;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        width: 100vw;
+        transition: top 0.5s ease;
+        background-color: #fff;
+        .main-menu__list {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .main-menu__item {
+            display: inline-block;
+            position: relative;
+            top: 0;
+            &, &:last-of-type {
+                display: block;
+                margin: 7.5px 0;
+            }
+            &:last-child {
+                display: block;
+            }
+            a:hover:not(:active) {
+                color: #E47209;
+                text-shadow: 0px 0px 2px #E47209;
+            }
+            a, a:visited {
+                color: #333B41;
+            }
+            a:active {
+                @include menu-active();
+            }
+            &_highlighted {
+                a, a:visited {
+                    @include menu-active();
+                }
+                a:hover:not(:active) {
+                    text-shadow: 0px 0px 2px #E47209;
+                    transition: all 0.1s ease-in;
+                }
             }
         }
     }

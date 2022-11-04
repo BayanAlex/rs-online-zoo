@@ -11,18 +11,28 @@
     <div class="body-content">
         <header class="header">
             <div class="header-content center-content">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo logo_header">
                     <h1 class="logo__text">PetStory online</h1>
-                    <img src="assets/icons/bamboo.svg" alt="" class="logo__icon">
                 </a>
-                <nav class="main-menu">
+                <div class="menu-button">
+                    <input type="checkbox" name="menu-show" id="menu-show" class="menu-button__checkbox">
+                    <label for="menu-show" class="menu-button__label">
+                        <div class="menu-button__line"></div>
+                        <div class="menu-button__line"></div>
+                        <div class="menu-button__line"></div>
+                    </label>
+                </div>
+                <nav class="main-menu main-menu_header">
                     <ul class="main-menu__list">
-                        <li class="main-menu__item main-menu__item_highlighted main-menu__item_margin-left"><a href="index.html" class="main-manu__link">About</a></li>
+                        <a href="index.html" class="logo logo_header-menu">
+                            <div class="logo__text">PetStory online</div>
+                        </a>
+                        <li class="main-menu__item main-menu__item_highlighted"><a href="index.html" class="main-manu__link">About</a></li>
                         <li class="main-menu__item"><a href="#" class="main-manu__link">Map</a></li>
                         <li class="main-menu__item"><a href="#" class="main-manu__link">Zoos</a></li>
                         <li class="main-menu__item"><a href="pages/donate/index.html" class="main-manu__link">Donate</a></li>
                         <li class="main-menu__item"><a href="#" class="main-manu__link">Contact us</a></li>
-                        <li class="main-menu__item main-menu__item_align-right"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="main-manu__link">Designed by ©</a></li>
+                        <li class="main-menu__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="main-manu__link">Designed by ©</a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,7 +63,7 @@
                     </div>
                 </section>
                 <section class="section section_pets">
-                    <div class="section-pets-content pets center-content">
+                    <div class="section-pets-content pets center-content center-content_fixed">
                         <div class="pets-block">
                             <div class="pets__arrows">
                                 <button class="button button_round pets__arrow pets__arrow_left"><img src="assets/icons/arrow.svg" alt=""></button>
@@ -228,7 +238,7 @@
                     </div>
                 </section>
                 <section class="section section_testimonials">
-                    <div class="section-testimonials-content center-content">
+                    <div class="section-testimonials-content center-content center-content_fixed">
                         <div class="testimonials">
                             <h3 class="testimonials__caption">Testimonials</h3>
                             <div class="testimonials-block">
@@ -370,58 +380,53 @@
         </main>
         <footer class="footer">
             <div class="footer-content center-content">
-                <div class="footer__row1">
-                    <a href="index.html" class="logo">
-                        <h1 class="logo__text">PetStory online</h1>
-                        <img src="assets/icons/bamboo.svg" alt="" class="logo__icon">
-                    </a>
-                    <form class="subscribe">
-                        <label class="subscribe__caption">Subscribe to our news</label>
-                        <input type="email" value="" name="email" placeholder="Enter your email" class="subscribe__email" onchange="this.setAttribute('value', this.value);" required>
-                        <button type="submit" class="subscribe__submit">Submit</button>
-                    </form>
-                </div>
+                <a href="index.html" class="logo logo_footer">
+                    <div class="logo__text">PetStory online</div>
+                </a>
+                <form class="subscribe">
+                    <label class="subscribe__caption">Subscribe to our news</label>
+                    <input type="email" value="" name="email" placeholder="Enter your email" class="subscribe__email" onchange="this.setAttribute('value', this.value);" required>
+                    <button type="submit" class="subscribe__submit">Submit</button>
+                </form>
                 <button class="button footer__donate-button" onclick="window.location.href='pages/donate/index.html'">donate for volunteers</button>
-                <div class="footer__row2">
-                    <div class="social-links">
-                        <a href="https://www.facebook.com" class="social-link">
-                            <div class="social-link__icon">
-                                <img src="assets/icons/social/facebook.svg" alt="" class="social-link__img social-link__img_fb">
-                            </div>
-                            <div class="social-link__name">Facebook</div>
-                        </a>
-                        <a href="https://www.twitter.com" class="social-link">
-                            <div class="social-link__icon">
-                                <img src="assets/icons/social/twitter.svg" alt="" class="social-link__img social-link__img_twitter">
-                            </div>
-                            <div class="social-link__name">Twitter</div>
-                        </a>
-                        <a href="https://www.instagram.com" class="social-link">
-                            <div class="social-link__icon">
-                                <img src="assets/icons/social/instagram.svg" alt="" class="social-link__img social-link__img_instagram">
-                            </div>
-                            <div class="social-link__name">Instagram</div>
-                        </a>
-                        <a href="https://www.youtube.com" class="social-link">
-                            <div class="social-link__icon">
-                                <img src="assets/icons/social/youtube.svg" alt="" class="social-link__img social-link__img_youtube">
-                            </div>
-                            <div class="social-link__name">YouTube</div>
-                        </a>
-                    </div>
-                    <nav class="main-menu">
-                        <ul class="main-menu__list main-menu__list_footer">
-                            <li class="main-menu__item main-menu__item_highlighted main-menu__item_footer"><a href="index.html" class="main-manu__link">About</a></li>
-                            <li class="main-menu__item main-menu__item_footer"><a href="#" class="main-manu__link">Map</a></li>
-                            <li class="main-menu__item main-menu__item_footer"><a href="#" class="main-manu__link">Zoos</a></li>
-                            <li class="main-menu__item main-menu__item_footer"><a href="#" class="main-manu__link">Contact us</a></li>
-                        </ul>
-                    </nav>
-                    <a href="" class="footer__copyright">
-                        <p>Designed by Alisa Samborskaya</p>
-                        <p>©RSSchool & ©Yem Digital 2021</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="assets/icons/social/facebook.svg" alt="" class="social-link__img social-link__img_fb">
+                        </div>
+                        <div class="social-link__name">Facebook</div>
+                    </a>
+                    <a href="https://www.twitter.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="assets/icons/social/twitter.svg" alt="" class="social-link__img social-link__img_twitter">
+                        </div>
+                        <div class="social-link__name">Twitter</div>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="assets/icons/social/instagram.svg" alt="" class="social-link__img social-link__img_instagram">
+                        </div>
+                        <div class="social-link__name">Instagram</div>
+                    </a>
+                    <a href="https://www.youtube.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="assets/icons/social/youtube.svg" alt="" class="social-link__img social-link__img_youtube">
+                        </div>
+                        <div class="social-link__name">YouTube</div>
                     </a>
                 </div>
+                <nav class="main-menu main-menu_footer">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item main-menu__item_highlighted"><a href="index.html" class="main-manu__link">About</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Map</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Zoos</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="footer__copyright">
+                    <p>Designed by Alisa Samborskaya</p>
+                    <p>©RSSchool & ©Yem Digital 2021</p>
+                </a>
             </div>
         </footer>
     </div>

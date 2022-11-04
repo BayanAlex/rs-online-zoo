@@ -23,6 +23,7 @@
     border-radius: 5px;
     overflow: hidden;
     background: linear-gradient(to right bottom, #FA6F32, #FE9013);
+    padding: 1px;
     z-index: 1;
     &:hover &__img {
         scale: 1.05;
@@ -38,23 +39,28 @@
         transition: all 0.5s linear;
     }
     &__content {
-        margin: 1px;
+        height: 100%;
+        width: 100%;
+        // margin: 1px;
         border-radius: 4px;
         background-color: #fff;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
     &__img {
-        width: 366px;
-        height: 366px;
+        width: 100%;
+        height: auto;
         transition: all 0.5s linear;
     }
     &__description {
         position: relative;
-        height: 58px;
+        // height: 58px;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 7px 12px 15px;
+        padding: 7px 7px 12px 15px;
         top: 0;
         left: 0;
         transition: all 0.5s linear;
@@ -96,7 +102,7 @@
     &__arrows {
         display: flex;
         justify-content: space-between;
-        width: calc($max-content-width + (62px + 20px) * 2 - 2px - 60px);
+        width: calc($content-width + (62px + 20px) * 2 - 2px - 60px);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -134,6 +140,7 @@
             width: 294px;
         }
         &__button-choose-fav {
+            margin-top: 81px;
             margin-bottom: 140px;
         }
     }
@@ -141,14 +148,11 @@
     .pet-cards {
         grid-column-gap: 29px;
         grid-row-gap: 92px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .pet-card {
         width: 294px;
         height: 354px;
-        &__img {
-            width: 294px;
-            height: 294px;
-        }
     }
 }

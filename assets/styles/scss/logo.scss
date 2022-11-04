@@ -1,6 +1,5 @@
 .logo {
     position: relative;
-    box-sizing: border-box;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     border-radius: 2px;
@@ -22,11 +21,45 @@
         font-size: 19.0145px;
         line-height: 120%;
     }
-    &__icon {
+    &::before {
+        content: '';
         position: absolute;
         top: 23px;
         left: 9px;
         width: 12px;
         height: 21px;
+        background-color: #FFFFFF;
+        -webkit-mask-image: url('assets/icons/bamboo.svg');
+        mask-image: url('assets/icons/bamboo.svg');
+    }
+    &_header {
+        margin-right: 63px;
+    }
+    &_header-menu {
+        margin-bottom: 30.4px;
+        display: none;
+        border: 0.8px solid #FE9013;
+        color: #FE9013;
+        &::before {
+            background-color: #FE9013;
+        }
+    }
+    &_page-donate {
+        &::before {
+            -webkit-mask-image: url('../../assets/icons/bamboo.svg');
+            mask-image: url('../../assets/icons/bamboo.svg');
+        }
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .logo {
+        &_header {
+            border: none;
+            transform: scale(0.57);
+        }
+        &_header-menu {
+            display: flex;
+        }
     }
 }

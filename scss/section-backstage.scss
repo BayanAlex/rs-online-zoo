@@ -60,7 +60,8 @@
 @media screen and (max-width: $media2) {
     .backstage {
         grid-column-gap: 31px;
-        padding: 100px 0 142px;
+        grid-template-columns: 1fr auto;
+        padding: 99px 0 141px;
         &__img {
             margin-left: 0;
             width: 455px;
