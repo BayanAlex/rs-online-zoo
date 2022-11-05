@@ -56,6 +56,7 @@
         line-height: 120%;
         color: #333B41;
         margin-top: 20px;
+        margin-bottom: 60px;
         width: 100%;
         text-align: left;
     }
@@ -63,56 +64,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        margin-top: 60px;
         padding-right: 14px;
         width: 100%;
     }
     &__amount {
         margin-top: 48px;
-        &-text {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 140%;
-            color: #000000;
-            margin: 0 0 16px 6px;
-            width: 100%;
-        }
-        &-select {
-            width: 100%;
-        }
-    }
-    &__diet-days {
-        font-weight: 500;
-        font-size: 72px;
-        line-height: 80%;
-        text-align: center;
-        text-transform: uppercase;
-        color: #000000;
-        padding-bottom: 11px;
-    }
-    &__diet-description {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
-        text-align: center;
-        color: #333B41;
-    }
-    &__diet-count {
-        margin-top: 105px;
-    }
-    &__x {
-        width: 14px;
-        height: 14px;
-        color: #333B41;
-        margin: 130px 64px 0 11px;
-    }
-    &__animal-img {
-        img {
-            width: 284px;
-            height: 246px
-        }
-    }
-    &__amount {
         width: 100%;
         &-selectors {
             width: 100%;
@@ -209,6 +165,49 @@
             background-color: #333B41;
             -webkit-mask-image: url('../../assets/icons/dollar.svg');
             mask-image: url('../../assets/icons/dollar.svg');
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+            margin: 0 0 16px 6px;
+            width: 100%;
+        }
+        &-select {
+            width: 100%;
+        }
+    }
+    &__diet-days {
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 80%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 11px;
+    }
+    &__diet-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #333B41;
+        white-space: nowrap;
+    }
+    &__diet-count {
+        margin-top: 105px;
+    }
+    &__x {
+        width: 14px;
+        height: 14px;
+        color: #333B41;
+        margin: 130px 64px 0 11px;
+    }
+    &__animal-img {
+        img {
+            width: 284px;
+            height: 246px
         }
     }
     &__period {
@@ -338,6 +337,7 @@
         }
         &__amount {
             padding: 0 65px;
+            margin-top: 41px;
             &-selectors {
                 padding: 0;
                 div:nth-child(2) {
@@ -359,5 +359,167 @@
                 left: 3px;
             }
         }
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .section {
+        &-donate-content {
+            padding-top: 30px;
+            padding-bottom: 46px;
+        }
+        &_pic {
+            background: url('../../assets/images/panda_bg2.png') -272px 0/cover no-repeat;
+            height: 335px;
+            margin-top: 34px;
+        }
+    }
+
+    .donate {
+        &__caption {
+            margin: 0;
+            font-size: 24px;
+            line-height: 120%;
+        }
+        &__text {
+            margin-top: 30px;
+            padding-bottom: 5px;
+        }
+        &__info-caption {
+            margin-top: 30px;
+        }
+    }
+
+    .pick {
+        padding: 30px 0 31px;
+        margin-top: 30px;
+        &__text {
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding: 0;
+            text-align: center;
+        }
+        &__amount {
+            padding: 0;
+
+            &-selectors {
+                padding: 0 15px;
+                div:nth-child(3), div:nth-child(4) {
+                    display: none;
+                }
+            }
+            &-item {
+
+            }
+            &-text {
+                margin-left: 10px;
+                margin-bottom: 7px;
+            }
+            &-line {
+                width: calc(100% - 70px);
+                margin: auto 35px;
+            }
+            &-label {
+                top: 46px;
+                left: -3px;
+            }
+        }
+    }
+    .amount-input {
+        &__input {
+            width: 180px;
+            height: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: $media5) {
+    .section {
+        &-donate-content {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        &_pic {
+            background: url('../../assets/images/panda_bg2.png') -149px 0/cover no-repeat;
+            height: 187px;
+            margin-top: 34px;
+        }
+    }
+
+    .donate {
+        &__info-caption {
+            font-size: 24px;
+            line-height: 120%;
+        }
+    }
+
+    .pick {
+        padding: 20px 0 20px;
+        &__caption {
+            font-size: 24px;
+            line-height: 120%;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 140%;
+            margin-top: 10px;
+            margin-bottom: 10.3px;
+        }
+        &__animal-diet {
+            margin-top: 0;
+            padding-right: 0;
+            transform: scale(0.564);
+            transform-origin: top center;
+            height: 138.72px;
+            width: 100%;
+        }
+        &__amount {
+            padding: 0;
+            margin-top: 4px;
+            &-selectors {
+                padding: 0 10px;
+                height: 13.5px;
+            }
+            &-text {
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+            &-line {
+                width: calc(100% - 40px);
+                margin: auto 20px;
+            }
+            &-item {
+                width: 20px;
+                height: 20px;
+            }
+            &-radio {
+                &::after {
+                    width: 6px;
+                    height: 6px;
+                }
+                &::before {
+                    width: 12px;
+                    height: 12px;
+                }
+                &:checked, &:checked::before{
+                    border-width: 1px;
+                }
+            }
+            &-label {
+                top: 23px;
+                left: -1.5px;
+                scale: 0.5;
+                transform-origin: top left;
+            }
+        }
+        &__feed-button {
+            margin-top: 28px;
+        }
+        &__share-text {
+            margin-right: -1px;
+        }
+    }
+    .amount-input {
+        margin-top: 48px;
     }
 }

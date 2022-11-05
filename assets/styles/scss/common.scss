@@ -1,12 +1,13 @@
 $content-width: 1220px;
 $content-width_small-desktop: 1000px;
 $content-width_tablet: 640px;
+$content-width_mobile: 320px;
 $menu-active-color: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 $media1: 1500px;
 $media2: 1360px;
 $media3: 999px;
 $media4: 800px;
-$media5: 600px;
+$media5: 639px;
 
 @mixin menu-active {
     background: $menu-active-color;
@@ -23,6 +24,7 @@ $media5: 600px;
     font-weight: 400;
     font-size: 16px;
     background: #FFFFFF;
+    height: fit-content;
     &-content {
 
     }
@@ -81,7 +83,7 @@ h3 {
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
-    &-fixed {
+    &_fixed {
         width: $content-width;
     }
 }
@@ -97,20 +99,22 @@ h3 {
 
 @media screen and (max-width: $media3) {
     .center-content {
-        min-width: $content-width_small-desktop;
-        &_fixed {
-            width: $content-width_small-desktop;
-        }
-    }
-}
-
-@media screen and (max-width: $media4) {
-    .center-content {
         min-width: $content-width_tablet;
         padding-left: 20px;
         padding-right: 20px;
         &_fixed {
             width: $content-width_tablet;
+        }
+    }
+}
+
+@media screen and (max-width: $media5) {
+    .center-content {
+        min-width: $content-width_mobile;
+        padding-left: 10px;
+        padding-right: 10px;
+        &_fixed {
+            width: $content-width_mobile;
         }
     }
 }

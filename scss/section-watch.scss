@@ -113,3 +113,49 @@
         }
     }
 }
+
+@media screen and (max-width: $media5) {
+    .section {
+        &_watch {
+            height: 187px;
+            margin-top: 34px;
+            padding-top: 0;
+        }
+        &-watch {
+            &-content {
+                // padding: 0 2.31vw 0 20px;
+                padding: 0 10px;
+                height: 100%;
+            }
+            &__text-and-button {
+                position: relative;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+            }
+            &__text {
+                font-size: 28px;
+                line-height: 75%;
+                width: 128.13px;
+                margin: 41px 0 auto 0;
+                &::before {
+                    width: 119.09px;
+                    height: 119.09px;
+                    top: -19px;
+                    left: -18.7px;
+                }
+            }
+            &__button {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 207px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                align-self: center;
+            }
+        }
+    }
+}

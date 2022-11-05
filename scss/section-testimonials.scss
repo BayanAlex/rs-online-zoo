@@ -3,13 +3,12 @@
         background: url('assets/images/leaf.png') 100% 126% no-repeat;
     }
     &-testimonials-content {
-
+        padding-top: 142px;
+        padding-bottom: 180px;
     }
 }
 
 .testimonials {
-    padding-top: 142px;
-    padding-bottom: 180px;
     &__caption {
         margin-bottom: 46px;
     }
@@ -61,17 +60,16 @@
 }
 
 .testimonials-cards {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 29px;
     width: 100%;
     overflow: hidden;
 }
 
 .testimonial-card {
-    flex-shrink: 0;
-    flex-grow: 0;
-    flex-basis: 268px;
-    margin-right: 29px;
-    // width: 268px;
+    width: 268px;
     height: 391px;
     border-radius: 20px;
     padding: 2px;
@@ -134,7 +132,8 @@
 @media screen and (max-width: $media2) {
     .section {
         &-testimonials-content {
-
+            padding-top: 102px;
+            padding-bottom: 140px;
         }
         &_testimonials {
             background: url('assets/images/leaf.png') 100% 116%/196.2px 324px no-repeat;
@@ -159,18 +158,101 @@
     }
 
     .testimonial-card {
-        margin-right: 30px;
-        flex-basis: 293px;
-        // &__text {
-        //     height: 309px;
-        // }
+        width: 293px;
     }
 
     .testimonials {
-        padding-top: 102px;
-        padding-bottom: 140px;
         &__caption {
             margin-bottom: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: $media3) {
+    .testimonials-cards {
+        width: 615px;
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .section {
+        &-testimonials-content {
+            padding-top: 60px;
+            padding-bottom: 80px;
+            max-width: 640px;
+        }
+        &_testimonials {
+            background: url('assets/images/leaf.png') 101% 114.5%/121.64px 200.88px no-repeat;
+        }
+    }
+
+    .testimonials-block {
+        margin-bottom: 40px;
+        &__scroll-wrap {
+            display: none;
+        }
+    }
+
+    .testimonials-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 15px;
+        // grid-auto-rows: 0;
+        height: 357px;
+        width: 100%;
+    }
+
+    .testimonial-card {
+        height: 109px;
+        width: 100%;
+        &__text {
+            height: 37px;
+        }
+    }
+
+    .testimonials {
+        &__caption {
+            margin-bottom: 28px;
+        }
+        &__button-wrap {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: $media5) {
+    .section {
+        &-testimonials-content {
+            padding-top: 30px;
+            padding-bottom: 60px;
+            width: 100%;
+        }
+        &_testimonials {
+            background: url('assets/images/leaf.png') 100% 106.5%/62.44px 103.12px no-repeat;
+        }
+    }
+
+    .testimonials-block {
+        margin-bottom: 30px;
+    }
+
+    .testimonials-cards {
+        grid-row-gap: 15px;
+        height: 357px;
+    }
+
+    .testimonial-card {
+        height: 109px;
+        width: 100%;
+        &__text {
+            height: 37px;
+        }
+    }
+
+    .testimonials {
+        &__caption {
+            margin-bottom: 20px;
         }
     }
 }

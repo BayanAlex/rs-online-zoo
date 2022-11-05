@@ -7,6 +7,9 @@
   font-weight: 400;
   font-size: 16px;
   background: #FFFFFF;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 h2 {
   font-weight: 400;
@@ -62,7 +65,7 @@ h3 {
   padding-right: 30px;
   margin: 0 auto;
 }
-.center-content-fixed {
+.center-content_fixed {
   width: 1220px;
 }
 
@@ -76,20 +79,22 @@ h3 {
 }
 @media screen and (max-width: 999px) {
   .center-content {
-    min-width: 1000px;
-  }
-  .center-content_fixed {
-    width: 1000px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .center-content {
     min-width: 640px;
     padding-left: 20px;
     padding-right: 20px;
   }
   .center-content_fixed {
     width: 640px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .center-content {
+    min-width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .center-content_fixed {
+    width: 320px;
   }
 }
 .header {
@@ -419,6 +424,7 @@ h3 {
   line-height: 120%;
   color: #333B41;
   margin-top: 20px;
+  margin-bottom: 60px;
   width: 100%;
   text-align: left;
 }
@@ -426,54 +432,11 @@ h3 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 60px;
   padding-right: 14px;
   width: 100%;
 }
 .pick__amount {
   margin-top: 48px;
-}
-.pick__amount-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  color: #000000;
-  margin: 0 0 16px 6px;
-  width: 100%;
-}
-.pick__amount-select {
-  width: 100%;
-}
-.pick__diet-days {
-  font-weight: 500;
-  font-size: 72px;
-  line-height: 80%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  padding-bottom: 11px;
-}
-.pick__diet-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  color: #333B41;
-}
-.pick__diet-count {
-  margin-top: 105px;
-}
-.pick__x {
-  width: 14px;
-  height: 14px;
-  color: #333B41;
-  margin: 130px 64px 0 11px;
-}
-.pick__animal-img img {
-  width: 284px;
-  height: 246px;
-}
-.pick__amount {
   width: 100%;
 }
 .pick__amount-selectors {
@@ -571,6 +534,47 @@ h3 {
   background-color: #333B41;
   -webkit-mask-image: url("../../assets/icons/dollar.svg");
   mask-image: url("../../assets/icons/dollar.svg");
+}
+.pick__amount-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin: 0 0 16px 6px;
+  width: 100%;
+}
+.pick__amount-select {
+  width: 100%;
+}
+.pick__diet-days {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 11px;
+}
+.pick__diet-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #333B41;
+  white-space: nowrap;
+}
+.pick__diet-count {
+  margin-top: 105px;
+}
+.pick__x {
+  width: 14px;
+  height: 14px;
+  color: #333B41;
+  margin: 130px 64px 0 11px;
+}
+.pick__animal-img img {
+  width: 284px;
+  height: 246px;
 }
 .pick__period {
   margin-top: 25px;
@@ -703,6 +707,7 @@ h3 {
   }
   .pick__amount {
     padding: 0 65px;
+    margin-top: 41px;
   }
   .pick__amount-selectors {
     padding: 0;
@@ -720,6 +725,146 @@ h3 {
   .pick__amount-label {
     top: 46px;
     left: 3px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section-donate-content {
+    padding-top: 30px;
+    padding-bottom: 46px;
+  }
+  .section_pic {
+    background: url("../../assets/images/panda_bg2.png") -272px 0/cover no-repeat;
+    height: 335px;
+    margin-top: 34px;
+  }
+  .donate__caption {
+    margin: 0;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .donate__text {
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
+  .donate__info-caption {
+    margin-top: 30px;
+  }
+  .pick {
+    padding: 30px 0 31px;
+    margin-top: 30px;
+  }
+  .pick__text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 0;
+    text-align: center;
+  }
+  .pick__amount {
+    padding: 0;
+  }
+  .pick__amount-selectors {
+    padding: 0 15px;
+  }
+  .pick__amount-selectors div:nth-child(3), .pick__amount-selectors div:nth-child(4) {
+    display: none;
+  }
+  .pick__amount-text {
+    margin-left: 10px;
+    margin-bottom: 7px;
+  }
+  .pick__amount-line {
+    width: calc(100% - 70px);
+    margin: auto 35px;
+  }
+  .pick__amount-label {
+    top: 46px;
+    left: -3px;
+  }
+  .amount-input__input {
+    width: 180px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .section-donate-content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .section_pic {
+    background: url("../../assets/images/panda_bg2.png") -149px 0/cover no-repeat;
+    height: 187px;
+    margin-top: 34px;
+  }
+  .donate__info-caption {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .pick {
+    padding: 20px 0 20px;
+  }
+  .pick__caption {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .pick__text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 10px;
+    margin-bottom: 10.3px;
+  }
+  .pick__animal-diet {
+    margin-top: 0;
+    padding-right: 0;
+    transform: scale(0.564);
+    transform-origin: top center;
+    height: 138.72px;
+    width: 100%;
+  }
+  .pick__amount {
+    padding: 0;
+    margin-top: 4px;
+  }
+  .pick__amount-selectors {
+    padding: 0 10px;
+    height: 13.5px;
+  }
+  .pick__amount-text {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  .pick__amount-line {
+    width: calc(100% - 40px);
+    margin: auto 20px;
+  }
+  .pick__amount-item {
+    width: 20px;
+    height: 20px;
+  }
+  .pick__amount-radio::after {
+    width: 6px;
+    height: 6px;
+  }
+  .pick__amount-radio::before {
+    width: 12px;
+    height: 12px;
+  }
+  .pick__amount-radio:checked, .pick__amount-radio:checked::before {
+    border-width: 1px;
+  }
+  .pick__amount-label {
+    top: 23px;
+    left: -1.5px;
+    scale: 0.5;
+    transform-origin: top left;
+  }
+  .pick__feed-button {
+    margin-top: 28px;
+  }
+  .pick__share-text {
+    margin-right: -1px;
+  }
+  .amount-input {
+    margin-top: 48px;
   }
 }
 .footer {
@@ -967,9 +1112,7 @@ h3 {
   }
   .social-links {
     justify-self: end;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 30px;
+    grid-row-gap: 20px;
   }
   .social-link__name {
     display: none;
@@ -978,7 +1121,7 @@ h3 {
     margin-right: 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 639px) {
   .footer-content {
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
@@ -1018,5 +1161,11 @@ h3 {
   .logo_footer::before {
     left: 73px;
     top: -3px;
+  }
+  .social-links {
+    justify-self: end;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
   }
 }

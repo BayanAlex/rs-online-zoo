@@ -77,7 +77,6 @@
 
 .payment-card {
     width: 168px;
-    height: 244px;
     &__img {
         &-content {
             background: linear-gradient(to right bottom, #FA6F32, #FE9013);
@@ -113,6 +112,7 @@
         }
     }
     &__text {
+        height: 76px;
         padding-top: 30px;
         font-weight: 400;
         font-size: 16px;
@@ -125,9 +125,6 @@
     .section {
         &_pick {
             padding: 30px 0 50px;
-        }
-        &-pick-content {
-
         }
     }
     .pick {
@@ -150,5 +147,125 @@
 
     .payment-block {
         margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: $media3) {
+    .section {
+        &_pick {
+            padding: 20px 0;
+        }
+        &-pick-content {
+            padding: 0;
+        }
+    }
+    .pick {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        &__text {
+            width: 100%;
+            &-block {
+                margin: 0 20px 30px;
+            }
+            &_bold {
+                margin-bottom: 15px;
+            }
+        }
+        &__caption {
+            margin-bottom: 21px;
+        }
+        &__sub-caption {
+            margin-bottom: 15px;
+        }
+        &__pay-caption {
+            margin-bottom: 20px;
+        }
+    }
+
+    .payment-block {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        &__arrow {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            width: 42px;
+            padding-top: 0;
+            position: relative;
+            img {
+                content: url('assets/images/arrow2.svg');
+                position: absolute;
+                top: -17px;
+                left: -33px;
+                width: 89px;
+                height: 29px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media5) {
+    .section {
+        &_pick {
+            // padding: 20px 10px;
+        }
+        &-pick-content {
+            padding: 0 10px;
+        }
+    }
+    .pick {
+        padding: 20px 0 40px;
+        &__text {
+            display: none;
+            &-block {
+                margin: 0 0 20px;
+                width: 100%;
+            }
+        }
+        &__caption {
+            margin-bottom: 10px;
+            font-size: 24px;
+            line-height: 120%;
+        }
+        &__sub-caption {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 120%;
+            text-align: center;
+        }
+        &__pay-caption {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 120%;
+        }
+    }
+
+    .payment-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        &__arrow {
+            display: block;
+            width: fit-content;
+            height: fit-content;
+            left: 90px;
+            top: -35px;
+            position: relative;
+            img {
+                transform: rotate(85deg);
+            }
+        }
+    }
+
+    .payment-card {
+        margin-bottom: 29px;
+        &__text {
+            padding-top: 10px;
+            height: 54px;
+        }
     }
 }
