@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online ZOO</title>
+</head>
+<body class="body">
+    <div class="body-content">
+        <header class="header">
+            <div class="header-content center-content">
+                <a href="../../index.html" class="logo logo_header logo_page-donate">
+                    <h1 class="logo__text">PetStory online</h1>
+                </a>
+                <input type="checkbox" name="menu-show" id="menu-show" class="menu-checkbox">
+                <label for="menu-show" class="menu-button">
+                    <div class="menu-button__line"></div>
+                    <div class="menu-button__line"></div>
+                    <div class="menu-button__line"></div>
+                </label>
+                <nav class="main-menu main-menu_header">
+                    <ul class="main-menu__list">
+                        <a href="index.html" class="logo logo_header-menu logo_page-donate">
+                            <div class="logo__text">PetStory online</div>
+                        </a>
+                        <li class="main-menu__item"><a href="../../index.html" class="main-manu__link">About</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Map</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Zoos</a></li>
+                        <li class="main-menu__item main-menu__item_highlighted"><a href="index.html" class="main-manu__link">Donate</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Contact us</a></li>
+                        <li class="main-menu__item"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="main-manu__link">Designed by ©</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <section class="section section_pic">
+                </section>
+                <section class="section section_donate">
+                    <div class="section-donate-content donate center-content">
+                        <h3 class="donate__caption">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+                        <p class="donate__text">
+                            <span class="donate__text_bold">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months</span>. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity. &nbsp;<span class="donate__text_bold">But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</span>
+                        </p>
+                        <h3 class="donate__info-caption">Donation Information</h3>
+                        <div class="pick">
+                            <h2 class="pick__caption">Pick and feed a friend</h2>
+                            <p class="pick__text">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+                            <div class="pick__animal-diet">
+                                <div class="pick__diet-count">
+                                    <div class="pick__diet-days">4</div>
+                                    <div class="pick__diet-description">Panda diet for the day.</div>
+                                </div>
+                                <img src="../../assets/icons/x.svg" alt="x" class="pick__x">
+                                <div class="pick__animal-img"><img src="../../assets/images/panda.png" alt=""></div>
+                            </div>
+                            <div class="pick__amount">
+                                <div class="pick__amount-text">Amount</div>
+                                <div class="pick__amount-select">
+                                    <div class="pick__amount-selectors">
+                                        <div class="pick__amount-line"></div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_5000" name="amount" value="5000" class="pick__amount-radio">
+                                            <label for="_5000" class="pick__amount-label"><div class="pick__amount-dollar"></div>5000</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_2000" name="amount" value="2000" class="pick__amount-radio">
+                                            <label for="_2000" class="pick__amount-label"><div class="pick__amount-dollar"></div>2000</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_1000" name="amount" value="1000" class="pick__amount-radio">
+                                            <label for="_1000" class="pick__amount-label"><div class="pick__amount-dollar"></div>1000</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_500" name="amount" value="500" class="pick__amount-radio">
+                                            <label for="_500" class="pick__amount-label"><div class="pick__amount-dollar"></div>500</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_250" name="amount" value="250" class="pick__amount-radio">
+                                            <label for="_250" class="pick__amount-label"><div class="pick__amount-dollar"></div>250</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_100" name="amount" value="100" class="pick__amount-radio">
+                                            <label for="_100" class="pick__amount-label"><div class="pick__amount-dollar"></div>100</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_50" name="amount" value="50" class="pick__amount-radio">
+                                            <label for="_50" class="pick__amount-label"><div class="pick__amount-dollar"></div>50</label>
+                                        </div>
+                                        <div class="pick__amount-item">
+                                            <input type="radio" id="_25" name="amount" value="250" class="pick__amount-radio">
+                                            <label for="_25" class="pick__amount-label"><div class="pick__amount-dollar"></div>25</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="amount-input">
+                                <input type="number" placeholder="Another amount" min="0" max="9999" data-maxlength="4" oninput="this.value = this.value.slice(0, this.dataset.maxlength)" class="amount-input__input">
+                                <div class="amount-input__dollar"></div>
+                            </div>
+                            <div class="pick__period">
+                                <label for="monthly" class="pick__period-label"><input type="radio" id="monthly" name="pariod" value="monthly" class="pick__period-radio">Monthly</label>
+                                <label for="once" class="pick__period-label"><input type="radio" id="once" name="pariod" value="once" class="pick__period-radio" checked>Once</label>
+                            </div>
+                            <button class="button button_rounded pick__feed-button">Feed a friend now</button>
+                            <p class="pick__share-text">Share with your friends on social networks</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-content center-content">
+                <a href="index.html" class="logo logo_footer logo_page-donate">
+                    <div class="logo__text">PetStory online</div>
+                </a>
+                <form class="subscribe">
+                    <label class="subscribe__caption">Subscribe to our news</label>
+                    <input type="email" value="" name="email" placeholder="Enter your email" class="subscribe__email" onchange="this.setAttribute('value', this.value);" required>
+                    <button type="submit" class="subscribe__submit">Submit</button>
+                </form>
+                <button class="button footer__donate-button" onclick="window.location.href='index.html'">donate for volunteers</button>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="../../assets/icons/social/facebook.svg" alt="" class="social-link__img social-link__img_fb">
+                        </div>
+                        <div class="social-link__name">Facebook</div>
+                    </a>
+                    <a href="https://www.twitter.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="../../assets/icons/social/twitter.svg" alt="" class="social-link__img social-link__img_twitter">
+                        </div>
+                        <div class="social-link__name">Twitter</div>
+                    </a>
+                    <a href="https://www.instagram.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="../../assets/icons/social/instagram.svg" alt="" class="social-link__img social-link__img_instagram">
+                        </div>
+                        <div class="social-link__name">Instagram</div>
+                    </a>
+                    <a href="https://www.youtube.com" class="social-link">
+                        <div class="social-link__icon">
+                            <img src="../../assets/icons/social/youtube.svg" alt="" class="social-link__img social-link__img_youtube">
+                        </div>
+                        <div class="social-link__name">YouTube</div>
+                    </a>
+                </div>
+                <nav class="main-menu main-menu_footer">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item"><a href="../../index.html" class="main-manu__link">About</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Map</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Zoos</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-manu__link">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="footer__copyright">
+                    <p>Designed by Alisa Samborskaya</p>
+                    <p>©RSSchool & ©Yem Digital 2021</p>
+                </a>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

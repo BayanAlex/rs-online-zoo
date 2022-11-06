@@ -12,9 +12,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 87px;
-    align-items: start;
-    padding: 140px 0 180px;
-    height: 723px;
+    align-items: center;
+    padding: 140px 0 176px;
     &__img {
         width: 609px;
         height: 403px;
@@ -47,5 +46,89 @@
         font-size: 16px;
         line-height: 140%;
         padding-top: 33px;
+    }
+}
+
+@media screen and (max-width: $media1) {
+    .section {
+        &_backstage {
+            background: none;
+        }
+    }
+}
+
+@media screen and (max-width: $media2) {
+    .backstage {
+        grid-column-gap: 31px;
+        grid-template-columns: 1fr auto;
+        padding: 99px 0 141px;
+        &__img {
+            margin-left: 0;
+            width: 455px;
+            height: 408px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: $media3) {
+    .section {
+        &_backstage {
+            background: url('assets/images/flower.png') 103.5% -5px/auto 476px no-repeat;
+        }
+    }
+
+    .backstage {
+        display: block;
+        padding: 60px 0 80px;
+        margin-right: 105px;
+        &__img {
+            display: none;
+        }
+        &__description {
+            padding-top: 20px;
+        }
+        &__subcaption {
+            padding-top: 30px;
+        }
+        &__text {
+            padding-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: $media5) {
+    .section {
+        &_backstage {
+            background: url('assets/images/flower.png') calc(100% + 40px) 38px/auto 217px no-repeat;
+        }
+    }
+
+    .backstage {
+        display: block;
+        padding: 104px 0 40px;
+        margin: 0;
+        &__img {
+            display: none;
+        }
+        &__description {
+            font-size: 16px;
+            line-height: 130%;
+            padding-top: 10px;
+        }
+        &__caption {
+            font-size: 24px;
+            line-height: 120%;
+        }
+        &__subcaption {
+            font-size: 24px;
+            line-height: 120%;
+            padding-top: 20px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 140%;
+            padding-top: 10px;
+        }
     }
 }

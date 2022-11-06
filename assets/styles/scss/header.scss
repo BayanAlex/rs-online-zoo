@@ -1,11 +1,96 @@
 .header {
-    background-color: #000;
+    background-color: #111115;
     color: #fff;
     height: 80px;
+    position: relative;
+    z-index: 2;
     &-content {
         height: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+}
+
+.menu-button {
+    display: none;
+    width: 18px;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 10px;
+    cursor: pointer;
+    &:hover div {
+        background-color: #E47209;
+    }
+    &__line {
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+        background: #FFFFFF;
+    }
+}
+
+.menu-checkbox {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    display: none;
+
+    &:checked + label {
+        position: relative;
+        display: block;
+        transform-origin: center;
+        transform: rotate(135deg);
+        transition: all 0.5s ease;
+        &:hover div {
+            background-color: #E47209;
+        }
+    }
+
+    &:checked + label div {
+        background-color: #111115;
+        position: absolute;
+        transform-origin: center;
+    }
+
+    &:checked + label div:first-of-type {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 50%;
+    }
+    &:checked + label div:nth-of-type(2) {
+        display: none;
+    }
+    &:checked + label div:last-of-type {
+        height: 2px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: rotate(90deg);
+    }
+
+    &:checked {
+        & ~ .main-menu_header {
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 34px;
+        &-content {
+            justify-content: space-between;
+        }
+    }
+
+    .menu-button {
+        display: flex;
     }
 }
