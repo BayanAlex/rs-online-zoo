@@ -1,6 +1,10 @@
 @import '../../assets/styles/reset.css';
 @import '../../assets/styles/normalize.css';
 @import '../../assets/styles/fonts.css';
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .body {
   font-family: "Roboto";
   font-style: normal;
