@@ -222,7 +222,6 @@ h3 {
 }
 .main-menu__item a:active {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  background-color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -230,7 +229,6 @@ h3 {
 }
 .main-menu__item_highlighted a, .main-menu__item_highlighted a:visited {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  background-color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -296,7 +294,6 @@ h3 {
   }
   .main-menu_header .main-menu__item a:active {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    background-color: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -304,7 +301,6 @@ h3 {
   }
   .main-menu_header .main-menu__item_highlighted a, .main-menu_header .main-menu__item_highlighted a:visited {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    background-color: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1436,10 +1432,15 @@ h3 {
   color: #000000;
   border: 1px solid #333B41;
   margin-bottom: 0;
+  transition: all 0.1s ease-out;
 }
 .subscribe__submit:active {
   color: #4B9200;
   border-color: 1px solid #4B9200;
+}
+.subscribe__submit:hover {
+  box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+  transition: all 0.1s ease-in;
 }
 
 .social-links {
