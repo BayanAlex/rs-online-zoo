@@ -465,6 +465,18 @@ h3 {
   width: 40px;
   height: 40px;
 }
+.pick__amount-item:hover label {
+  color: #FE9013;
+  transition: all 0.1s ease-in;
+}
+.pick__amount-item:hover label div {
+  background-color: #FE9013;
+  transition: all 0.1s ease-in;
+}
+.pick__amount-item:hover input::after {
+  width: 12px;
+  height: 12px;
+}
 .pick__amount-radio {
   z-index: 1;
   -webkit-appearance: none;
@@ -523,6 +535,7 @@ h3 {
   color: #333B41;
   cursor: pointer;
   white-space: nowrap;
+  transition: all 0.1s ease-out;
 }
 .pick__amount-dollar {
   display: inline-block;
@@ -534,6 +547,7 @@ h3 {
   background-color: #333B41;
   -webkit-mask-image: url("../../assets/icons/dollar.svg");
   mask-image: url("../../assets/icons/dollar.svg");
+  transition: all 0.1s ease-out;
 }
 .pick__amount-text {
   font-weight: 400;
