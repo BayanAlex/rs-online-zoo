@@ -95,6 +95,20 @@
             position: relative;
             width: 40px;
             height: 40px;
+            &:hover {
+                label {
+                    color: #FE9013;
+                    transition: all 0.1s ease-in;
+                }
+                label div {
+                    background-color: #FE9013;
+                    transition: all 0.1s ease-in;
+                }
+                input::after {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
         }
         &-radio {
             z-index: 1;
@@ -154,6 +168,7 @@
             color: #333B41;
             cursor: pointer;
             white-space: nowrap;
+            transition: all 0.1s ease-out;
         }
         &-dollar {
             display: inline-block;
@@ -165,6 +180,7 @@
             background-color: #333B41;
             -webkit-mask-image: url('../../assets/icons/dollar.svg');
             mask-image: url('../../assets/icons/dollar.svg');
+            transition: all 0.1s ease-out;
         }
         &-text {
             font-weight: 400;
