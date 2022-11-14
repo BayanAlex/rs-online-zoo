@@ -652,7 +652,7 @@ h3 {
   -webkit-filter: brightness(50%);
 }
 .pet-card:hover .pet-card__description {
-  top: -54px;
+  top: -57px;
   background-color: #FE9013;
   opacity: 0.8;
   border-radius: 5px;
