@@ -49,6 +49,7 @@
     align-items: center;
     &__caption {
         color: #FE9013;
+        margin-right: 14px;
     }
     &__text {
         font-weight: 400;
@@ -347,13 +348,16 @@
     .pick {
         padding: 20px 0 45px;
         margin-top: 40px;
+        &__caption {
+            margin-right: 14px;
+        }
         &__text {
             margin-top: 11px;
             padding: 0 47px;
         }
         &__amount {
             padding: 0 65px;
-            margin-top: 41px;
+            margin-top: 47px;
             &-selectors {
                 padding: 0;
                 div:nth-child(2) {
@@ -398,17 +402,20 @@
             line-height: 120%;
         }
         &__text {
-            margin-top: 30px;
+            margin-top: 20px;
             padding-bottom: 5px;
         }
         &__info-caption {
-            margin-top: 30px;
+            margin-top: 23px;
         }
     }
 
     .pick {
         padding: 30px 0 31px;
         margin-top: 30px;
+        &__caption {
+            margin-right: 0;
+        }
         &__text {
             margin-top: 20px;
             margin-bottom: 50px;
@@ -417,7 +424,7 @@
         }
         &__amount {
             padding: 0;
-
+            margin-top: 42px;
             &-selectors {
                 padding: 0 15px;
                 div:nth-child(3), div:nth-child(4) {
@@ -440,6 +447,9 @@
                 left: -3px;
             }
         }
+        &__period {
+            margin-top: 30px;
+        }
     }
     .amount-input {
         &__input {
@@ -452,7 +462,7 @@
 @media screen and (max-width: $media5) {
     .section {
         &-donate-content {
-            padding-top: 30px;
+            padding-top: 31px;
             padding-bottom: 20px;
         }
         &_pic {
@@ -466,6 +476,10 @@
         &__info-caption {
             font-size: 24px;
             line-height: 120%;
+            margin-top: 25px;
+        }
+        &__text {
+            line-height: 138%;
         }
     }
 
@@ -498,7 +512,7 @@
             }
             &-text {
                 margin-left: 0;
-                margin-bottom: 5px;
+                margin-bottom: 7px;
             }
             &-line {
                 width: calc(100% - 40px);
@@ -527,6 +541,9 @@
                 scale: 0.5;
                 transform-origin: top left;
             }
+        }
+        &__period {
+            margin-top: 25px;
         }
         &__feed-button {
             margin-top: 28px;

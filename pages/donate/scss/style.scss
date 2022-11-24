@@ -7,3 +7,23 @@
 @import '../../../assets/styles/scss/logo.scss';
 @import 'donate.scss';
 @import '../../../assets/styles/scss/footer.scss';
+
+@media screen and (max-width: $media2) {
+    .main-menu_footer {
+        .main-menu__item {
+            &:first-of-type {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media4) {
+    .main-menu_footer {
+        .main-menu__item {
+            &:first-of-type {
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -56,10 +56,15 @@
     .logo {
         &_header {
             border: none;
-            transform: scale(0.57);
+            transform: scale(0.63);
+            transform-origin: left center;
+            margin-left: -2px;
         }
         &_header-menu {
             display: flex;
+            transform: scale(0.8);
+            transform-origin: left top;
+            margin-bottom: 11px;
         }
     }
 }
