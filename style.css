@@ -363,15 +363,22 @@ h3 {
 @media screen and (max-width: 800px) {
   .logo_header {
     border: none;
-    transform: scale(0.57);
+    transform: scale(0.63);
+    transform-origin: left center;
+    margin-left: -2px;
   }
   .logo_header-menu {
     display: flex;
+    transform: scale(0.8);
+    transform-origin: left top;
+    margin-bottom: 11px;
   }
 }
 .section_watch {
   background: url("assets/images/panda_bg1.png") center/cover no-repeat;
-  height: 700px;
+  height: 780px;
+  margin-top: -80px;
+  padding-top: 80px;
 }
 .section-watch-content {
   display: flex;
@@ -415,7 +422,7 @@ h3 {
 
 @media screen and (max-width: 1360px) {
   .section_watch {
-    height: 504px;
+    height: 584px;
   }
   .section-watch-content {
     padding: 0 3.575vw 0;
@@ -439,6 +446,7 @@ h3 {
 @media screen and (max-width: 800px) {
   .section_watch {
     height: 373px;
+    margin-top: 0;
     padding-top: 34px;
   }
   .section-watch-content {
@@ -455,7 +463,8 @@ h3 {
   .section-watch__text {
     font-size: 54.29px;
     width: 255.64px;
-    margin: 48px 0 auto 0;
+    margin: 48px 2px auto 0;
+    line-height: 76%;
   }
   .section-watch__text::before {
     width: 237.6px;
@@ -465,6 +474,7 @@ h3 {
   }
   .section-watch__button {
     margin-bottom: 40px;
+    margin-left: 0;
     align-self: end;
   }
 }
@@ -472,11 +482,11 @@ h3 {
   .section_watch {
     height: 187px;
     margin-top: 34px;
-    padding-top: 0;
   }
   .section-watch-content {
     padding: 0 10px;
     height: 100%;
+    margin-top: -34px;
   }
   .section-watch__text-and-button {
     position: relative;
@@ -573,24 +583,28 @@ h3 {
 }
 @media screen and (max-width: 999px) {
   .section_backstage {
-    background: url("assets/images/flower.png") 103.5% -5px/auto 476px no-repeat;
+    background: url("assets/images/flower.png") 106.1% -4.5px/auto 482px no-repeat;
   }
   .backstage {
     display: block;
-    padding: 60px 0 80px;
+    padding: 60px 0 79px;
     margin-right: 105px;
+  }
+  .backstage__caption {
+    padding-left: 5px;
   }
   .backstage__img {
     display: none;
   }
   .backstage__description {
-    padding-top: 20px;
+    padding-top: 22px;
   }
   .backstage__subcaption {
     padding-top: 30px;
+    padding-left: 3.7px;
   }
   .backstage__text {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 }
 @media screen and (max-width: 639px) {
@@ -599,7 +613,7 @@ h3 {
   }
   .backstage {
     display: block;
-    padding: 104px 0 40px;
+    padding: 104px 0 39px;
     margin: 0;
   }
   .backstage__img {
@@ -608,21 +622,24 @@ h3 {
   .backstage__description {
     font-size: 16px;
     line-height: 130%;
-    padding-top: 10px;
+    padding-top: 11px;
+    padding-left: 2px;
   }
   .backstage__caption {
     font-size: 24px;
     line-height: 120%;
+    padding-left: 0;
   }
   .backstage__subcaption {
     font-size: 24px;
     line-height: 120%;
-    padding-top: 20px;
+    padding-top: 21px;
+    padding-left: 2px;
   }
   .backstage__text {
     font-size: 16px;
     line-height: 140%;
-    padding-top: 10px;
+    padding-top: 8px;
   }
 }
 .section_pets {
@@ -762,10 +779,11 @@ h3 {
 }
 @media screen and (max-width: 999px) {
   .section_pets {
-    background: url("assets/images/palm.png") -250px 100%/386px 202px no-repeat, url("assets/images/strelitzia.png") bottom right/175px 131px no-repeat;
+    background: url("assets/images/palm.png") -252px 100.15%/386px 202px no-repeat, url("assets/images/strelitzia.png") bottom right/175px 131px no-repeat;
   }
   .pets__arrows {
     width: 154px;
+    margin-top: -4px;
   }
   .pets__button-choose-fav {
     margin-top: 60px;
@@ -781,6 +799,7 @@ h3 {
   }
   .pet-card__name {
     font-size: 12.47px;
+    line-height: 155%;
   }
   .pet-card__area {
     font-size: 11.7px;
@@ -788,20 +807,24 @@ h3 {
   .pet-card__food {
     transform: scale(0.779);
   }
+  .pet-card__food-img {
+    margin-left: 9px;
+    margin-top: -3px;
+  }
   .pet-card__food-img_banana-bamboo {
-    margin-left: 11px;
-    margin-top: 2px;
+    margin-left: 20px;
+    margin-top: -1px;
   }
 }
 @media screen and (max-width: 639px) {
   .section_pets {
-    background: url("assets/images/palm.png") -79.5px 100%/137.85px 72px no-repeat, url("assets/images/strelitzia.png") calc(100% + 20px) 100%/85px 71px no-repeat;
+    background: url("assets/images/palm.png") -79.5px 100%/137.85px 72px no-repeat, url("assets/images/strelitzia.png") calc(100% + 20px) 100.2%/90px 70px no-repeat;
   }
   .pets__arrows {
     display: none;
   }
   .pets__button-choose-fav {
-    margin-top: 20px;
+    margin-top: 19px;
     margin-bottom: 60px;
   }
   .pet-cards {
@@ -814,6 +837,10 @@ h3 {
   .pet-card {
     width: 285px;
     height: 332px;
+  }
+  .pet-card__description {
+    padding-top: 5px;
+    padding-left: 12px;
   }
 }
 .section_pick {
@@ -977,13 +1004,19 @@ h3 {
     margin: 0 20px 30px;
   }
   .pick__text_bold {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .pick__caption {
     margin-bottom: 21px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
   }
   .pick__sub-caption {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
   }
   .pick__pay-caption {
     margin-bottom: 20px;
@@ -1016,7 +1049,7 @@ h3 {
     padding: 0 10px;
   }
   .pick {
-    padding: 20px 0 40px;
+    padding: 22px 0 40px;
   }
   .pick__text {
     display: none;
@@ -1046,7 +1079,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .payment-block__arrow {
     display: block;
@@ -1068,7 +1101,7 @@ h3 {
   }
   .payment-card__text {
     padding-top: 10px;
-    height: 54px;
+    height: 49px;
   }
 }
 .section_testimonials {
@@ -1249,11 +1282,22 @@ h3 {
     height: 109px;
     width: 100%;
   }
+  .testimonial-card__content {
+    padding-left: 11px;
+    padding-top: 13px;
+  }
   .testimonial-card__text {
     height: 37px;
+    margin-left: 4px;
+  }
+  .testimonial-card__info_location::after {
+    margin-left: 5px;
   }
   .testimonials__caption {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+  }
+  .testimonials__button {
+    width: 240px;
   }
   .testimonials__button-wrap {
     display: flex;
@@ -1267,7 +1311,7 @@ h3 {
     width: 100%;
   }
   .section_testimonials {
-    background: url("assets/images/leaf.png") 100% 106.5%/62.44px 103.12px no-repeat;
+    background: url("assets/images/leaf.png") 101% 107.5%/62.44px 103.12px no-repeat;
   }
   .testimonials-block {
     margin-bottom: 30px;
@@ -1282,9 +1326,17 @@ h3 {
   }
   .testimonial-card__text {
     height: 37px;
+    margin-left: 6px;
+  }
+  .testimonial-card__content {
+    padding-top: 9px;
+  }
+  .testimonial-card__avatar {
+    margin-right: 6px;
   }
   .testimonials__caption {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    font-size: 24px;
   }
 }
 .footer {
@@ -1520,11 +1572,14 @@ h3 {
   .footer__copyright {
     margin-top: 42px;
   }
+  .main-menu_footer {
+    line-height: 120%;
+  }
   .main-menu_footer .main-menu__list {
     justify-content: flex-start;
   }
   .main-menu_footer .main-menu__item {
-    margin: 0 18px;
+    margin: 0 18.5px;
   }
   .main-menu_footer .main-menu__item:first-of-type {
     margin-left: 0;
@@ -1553,15 +1608,23 @@ h3 {
     grid-template-rows: auto;
     grid-template-areas: "logo" "social-links" "donate-button" "copyright" "menu";
     justify-items: center;
+    padding: 20px 12px 21px;
   }
   .footer__donate-button {
     margin: 0;
   }
   .footer__copyright {
     margin: 0;
+    font-size: 15px;
+  }
+  .footer__copyright p:first-of-type {
+    margin-bottom: 13px;
   }
   .footer .social-links {
     justify-self: inherit;
+  }
+  .main-menu_footer {
+    margin-top: 1px;
   }
   .main-menu_footer .main-menu__list {
     justify-content: center;

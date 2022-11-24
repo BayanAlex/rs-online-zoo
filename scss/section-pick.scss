@@ -168,14 +168,20 @@
                 margin: 0 20px 30px;
             }
             &_bold {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
         }
         &__caption {
             margin-bottom: 21px;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 120%;
         }
         &__sub-caption {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 120%;
         }
         &__pay-caption {
             margin-bottom: 20px;
@@ -216,7 +222,7 @@
         }
     }
     .pick {
-        padding: 20px 0 40px;
+        padding: 22px 0 40px;
         &__text {
             display: none;
             &-block {
@@ -247,7 +253,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         &__arrow {
             display: block;
             width: fit-content;
@@ -265,7 +271,7 @@
         margin-bottom: 29px;
         &__text {
             padding-top: 10px;
-            height: 54px;
+            height: 49px;
         }
     }
 }

@@ -244,16 +244,19 @@
     }
 
     .main-menu_footer {
-        .main-menu__list {
-            justify-content: flex-start;
-        }
-        .main-menu__item {
-            margin: 0 18px;
-            &:first-of-type {
-                margin-left: 0;
+        line-height: 120%;
+        .main-menu {
+            &__list {
+                justify-content: flex-start;
             }
-            &:last-of-type {
-                margin-right: 0;
+            &__item {
+                margin: 0 18.5px;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -289,6 +292,7 @@
                                     "copyright"
                                     "menu";
             justify-items: center;
+            padding: 20px 12px 21px;
         }
 
         &__donate-button {
@@ -297,6 +301,10 @@
 
         &__copyright {
             margin: 0;
+            font-size: 15px;
+            p:first-of-type {
+                margin-bottom: 13px;
+            }
         }
 
         .social-links {
@@ -305,6 +313,7 @@
     }
 
     .main-menu_footer {
+        margin-top: 1px;
         .main-menu__list {
             justify-content: center;
         }

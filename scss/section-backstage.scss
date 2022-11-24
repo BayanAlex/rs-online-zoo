@@ -74,25 +74,29 @@
 @media screen and (max-width: $media3) {
     .section {
         &_backstage {
-            background: url('assets/images/flower.png') 103.5% -5px/auto 476px no-repeat;
+            background: url('assets/images/flower.png') 106.1% -4.5px/auto 482px no-repeat;
         }
     }
 
     .backstage {
         display: block;
-        padding: 60px 0 80px;
+        padding: 60px 0 79px;
         margin-right: 105px;
+        &__caption {
+            padding-left: 5px;
+        }
         &__img {
             display: none;
         }
         &__description {
-            padding-top: 20px;
+            padding-top: 22px;
         }
         &__subcaption {
             padding-top: 30px;
+            padding-left: 3.7px;
         }
         &__text {
-            padding-top: 20px;
+            padding-top: 18px;
         }
     }
 }
@@ -106,7 +110,7 @@
 
     .backstage {
         display: block;
-        padding: 104px 0 40px;
+        padding: 104px 0 39px;
         margin: 0;
         &__img {
             display: none;
@@ -114,21 +118,24 @@
         &__description {
             font-size: 16px;
             line-height: 130%;
-            padding-top: 10px;
+            padding-top: 11px;
+            padding-left: 2px;
         }
         &__caption {
             font-size: 24px;
             line-height: 120%;
+            padding-left: 0;
         }
         &__subcaption {
             font-size: 24px;
             line-height: 120%;
-            padding-top: 20px;
+            padding-top: 21px;
+            padding-left: 2px;
         }
         &__text {
             font-size: 16px;
             line-height: 140%;
-            padding-top: 10px;
+            padding-top: 8px;
         }
     }
 }
