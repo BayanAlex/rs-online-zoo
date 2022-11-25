@@ -7,14 +7,31 @@
     }
 }
 
+.pet-carousel {
+    position: relative;
+    left: 0;
+    display: flex;
+    width: fit-content;
+    column-gap: 30px;
+    &-wrap {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    &_left-hidden {
+        left: calc(-100% - 28px);
+    }
+    &__transition {
+        transition: all 1s ease;
+    }
+}
 
 .pet-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 20px;
-    overflow: hidden;
 }
 
 .pet-card {
@@ -24,19 +41,20 @@
     overflow: hidden;
     background: linear-gradient(to right bottom, #FA6F32, #FE9013);
     padding: 1px;
-    z-index: 1;
-    &:hover &__img {
-        scale: 1.05;
-        transition: all 0.5s linear;
-        -webkit-filter: brightness(50%);
-    }
-    &:hover &__description {
-        top: -57px;
-        background-color: #FE9013;
-        opacity: 0.8;
-        border-radius: 5px;
-        margin: 0 5px;
-        transition: all 0.5s linear;
+    &_hover {
+        &:hover .pet-card__img {
+            scale: 1.05;
+            transition: all 0.5s linear;
+            -webkit-filter: brightness(50%);
+        }
+        &:hover .pet-card__description {
+            top: -57px;
+            background-color: #FE9013;
+            opacity: 0.8;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: all 0.5s linear;
+        }
     }
     &__content {
         height: 100%;
@@ -105,7 +123,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 0;
     }
     &__arrow {
         width: 62px;
@@ -137,6 +154,7 @@
     .pets {
         &__arrows {
             width: 294px;
+            z-index: 2;
         }
         &__button-choose-fav {
             margin-top: 81px;
@@ -170,6 +188,10 @@
             margin-top: 60px;
             margin-bottom: 100px;
         }
+    }
+
+    .pet-cards {
+        grid-template-columns: 1fr 1fr;
     }
 
     .pet-card {

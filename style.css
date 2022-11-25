@@ -647,13 +647,34 @@ h3 {
 .section_pets {
   background: url("assets/images/palm.png") -588px 100% no-repeat, url("assets/images/strelitzia.png") bottom right no-repeat;
 }
+.pet-carousel {
+  position: relative;
+  left: 0;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.pet-carousel-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.pet-carousel_left-hidden {
+  left: calc(-100% - 28px);
+}
+.pet-carousel__transition {
+  transition: all 1s ease;
+}
+
 .pet-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 20px;
-  overflow: hidden;
 }
 
 .pet-card {
@@ -663,14 +684,13 @@ h3 {
   overflow: hidden;
   background: linear-gradient(to right bottom, #FA6F32, #FE9013);
   padding: 1px;
-  z-index: 1;
 }
-.pet-card:hover .pet-card__img {
+.pet-card_hover:hover .pet-card__img {
   scale: 1.05;
   transition: all 0.5s linear;
   -webkit-filter: brightness(50%);
 }
-.pet-card:hover .pet-card__description {
+.pet-card_hover:hover .pet-card__description {
   top: -57px;
   background-color: #FE9013;
   opacity: 0.8;
@@ -738,7 +758,6 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 0;
 }
 .pets__arrow {
   width: 62px;
@@ -766,6 +785,7 @@ h3 {
   }
   .pets__arrows {
     width: 294px;
+    z-index: 2;
   }
   .pets__button-choose-fav {
     margin-top: 81px;
@@ -792,6 +812,9 @@ h3 {
   .pets__button-choose-fav {
     margin-top: 60px;
     margin-bottom: 100px;
+  }
+  .pet-cards {
+    grid-template-columns: 1fr 1fr;
   }
   .pet-card {
     width: 285px;
