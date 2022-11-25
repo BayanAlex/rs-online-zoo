@@ -707,7 +707,7 @@ h3 {
     padding-bottom: 30px;
   }
   .section_pic {
-    background: url("../../assets/images/panda_bg2.png") -172px 0/cover no-repeat;
+    background-position: -172px 0;
     height: 390px;
   }
   .donate__caption {
@@ -756,7 +756,7 @@ h3 {
     padding-bottom: 46px;
   }
   .section_pic {
-    background: url("../../assets/images/panda_bg2.png") -272px 0/cover no-repeat;
+    background-position: -272px 0;
     height: 335px;
     margin-top: 34px;
   }
@@ -821,7 +821,7 @@ h3 {
     padding-bottom: 20px;
   }
   .section_pic {
-    background: url("../../assets/images/panda_bg2.png") -149px 0/cover no-repeat;
+    background-position: -149px 0;
     height: 187px;
     margin-top: 34px;
   }

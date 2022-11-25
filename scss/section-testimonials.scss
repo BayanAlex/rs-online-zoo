@@ -136,7 +136,8 @@
             padding-bottom: 140px;
         }
         &_testimonials {
-            background: url('assets/images/leaf.png') 100% 116%/196.2px 324px no-repeat;
+            background-position: 100% 116%;
+            background-size: 196.2px 324px;
         }
     }
 
@@ -182,7 +183,8 @@
             max-width: 640px;
         }
         &_testimonials {
-            background: url('assets/images/leaf.png') 101% 114.5%/121.64px 200.88px no-repeat;
+            background-position: 101% 114.5%;
+            background-size: 121.64px 200.88px;
         }
     }
 
@@ -240,7 +242,9 @@
             width: 100%;
         }
         &_testimonials {
-            background: url('assets/images/leaf.png') 101% 107.5%/62.44px 103.12px no-repeat;
+            background: url('assets/images/leaf_mob.png') 100% calc(100% + 30px) no-repeat;
+            // background-position: 101% 107.5%;
+            // background-size: 62.44px 103.12px;
         }
     }
 

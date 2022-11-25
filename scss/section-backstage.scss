@@ -52,7 +52,7 @@
 @media screen and (max-width: $media1) {
     .section {
         &_backstage {
-            background: none;
+            background-position: calc($media1 - 204px) 12px;
         }
     }
 }
@@ -74,7 +74,8 @@
 @media screen and (max-width: $media3) {
     .section {
         &_backstage {
-            background: url('assets/images/flower.png') 106.1% -4.5px/auto 482px no-repeat;
+            background-position: 106.1% -4.5px;
+            background-size: auto 482px;
         }
     }
 
@@ -104,7 +105,8 @@
 @media screen and (max-width: $media5) {
     .section {
         &_backstage {
-            background: url('assets/images/flower.png') calc(100% + 40px) 38px/auto 217px no-repeat;
+            background-position: 116% 38px;
+            background-size: auto 217px;
         }
     }
 

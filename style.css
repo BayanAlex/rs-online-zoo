@@ -564,7 +564,7 @@ h3 {
 
 @media screen and (max-width: 1500px) {
   .section_backstage {
-    background: none;
+    background-position: 1296px 12px;
   }
 }
 @media screen and (max-width: 1360px) {
@@ -583,7 +583,8 @@ h3 {
 }
 @media screen and (max-width: 999px) {
   .section_backstage {
-    background: url("assets/images/flower.png") 106.1% -4.5px/auto 482px no-repeat;
+    background-position: 106.1% -4.5px;
+    background-size: auto 482px;
   }
   .backstage {
     display: block;
@@ -609,7 +610,8 @@ h3 {
 }
 @media screen and (max-width: 639px) {
   .section_backstage {
-    background: url("assets/images/flower.png") calc(100% + 40px) 38px/auto 217px no-repeat;
+    background-position: 116% 38px;
+    background-size: auto 217px;
   }
   .backstage {
     display: block;
@@ -759,7 +761,8 @@ h3 {
 
 @media screen and (max-width: 1360px) {
   .section_pets {
-    background: url("assets/images/palm.png") -192px 100%/386px 202px no-repeat, url("assets/images/strelitzia.png") bottom right/241px 180px no-repeat;
+    background-position: -192px 100%, bottom right;
+    background-size: 386px 202px, 241px 180px;
   }
   .pets__arrows {
     width: 294px;
@@ -779,7 +782,8 @@ h3 {
 }
 @media screen and (max-width: 999px) {
   .section_pets {
-    background: url("assets/images/palm.png") -252px 100.15%/386px 202px no-repeat, url("assets/images/strelitzia.png") bottom right/175px 131px no-repeat;
+    background-position: -252px 100.15%, bottom right;
+    background-size: 386px 202px, 175px 131px;
   }
   .pets__arrows {
     width: 154px;
@@ -818,7 +822,8 @@ h3 {
 }
 @media screen and (max-width: 639px) {
   .section_pets {
-    background: url("assets/images/palm.png") -79.5px 100%/137.85px 72px no-repeat, url("assets/images/strelitzia.png") calc(100% + 20px) 100.2%/90px 70px no-repeat;
+    background-position: -79.5px 100%, calc(100% + 20px) 100.2%;
+    background-size: 137.85px 72px, 90px 70px;
   }
   .pets__arrows {
     display: none;
@@ -1229,7 +1234,8 @@ h3 {
     padding-bottom: 140px;
   }
   .section_testimonials {
-    background: url("assets/images/leaf.png") 100% 116%/196.2px 324px no-repeat;
+    background-position: 100% 116%;
+    background-size: 196.2px 324px;
   }
   .testimonials-block {
     margin-bottom: 52px;
@@ -1263,7 +1269,8 @@ h3 {
     max-width: 640px;
   }
   .section_testimonials {
-    background: url("assets/images/leaf.png") 101% 114.5%/121.64px 200.88px no-repeat;
+    background-position: 101% 114.5%;
+    background-size: 121.64px 200.88px;
   }
   .testimonials-block {
     margin-bottom: 40px;
@@ -1311,7 +1318,7 @@ h3 {
     width: 100%;
   }
   .section_testimonials {
-    background: url("assets/images/leaf.png") 101% 107.5%/62.44px 103.12px no-repeat;
+    background: url("assets/images/leaf_mob.png") 100% calc(100% + 30px) no-repeat;
   }
   .testimonials-block {
     margin-bottom: 30px;
