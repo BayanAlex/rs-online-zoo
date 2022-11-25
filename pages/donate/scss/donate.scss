@@ -330,7 +330,7 @@
             padding-bottom: 30px;
         }
         &_pic {
-            background: url('../../assets/images/panda_bg2.png') -172px 0/cover no-repeat;
+            background-position: -172px 0;
             height: 390px;
         }
     }
@@ -389,7 +389,7 @@
             padding-bottom: 46px;
         }
         &_pic {
-            background: url('../../assets/images/panda_bg2.png') -272px 0/cover no-repeat;
+            background-position: -272px 0;
             height: 335px;
             margin-top: 34px;
         }
@@ -466,7 +466,7 @@
             padding-bottom: 20px;
         }
         &_pic {
-            background: url('../../assets/images/panda_bg2.png') -149px 0/cover no-repeat;
+            background-position: -149px 0;
             height: 187px;
             margin-top: 34px;
         }
