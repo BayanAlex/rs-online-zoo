@@ -3,7 +3,7 @@
     color: #fff;
     height: 80px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     &-content {
         height: 100%;
         display: flex;
@@ -15,7 +15,7 @@
 .menu-button {
     display: none;
     width: 18px;
-    z-index: 2;
+    z-index: 4;
     flex-direction: column;
     justify-content: space-between;
     min-height: 10px;
@@ -75,6 +75,19 @@
     &:checked {
         & ~ .main-menu_header {
             top: 0;
+            // &::after {
+            //     content: '';
+            //     position: fixed;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100vw;
+            //     height: 100vh;
+            //     z-index: 2;
+            //     background-color: #FFFFFF;
+            //     opacity: 0.5;
+            //     pointer-events: none;
+            //     transition: all 0.5s linear;
+            // }
         }
     }
 }
