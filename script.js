@@ -1,3 +1,5 @@
+import {menuChange, addModal, removeModal, enableScroll, disableScroll} from './assets/modules/common.js';
+
 const petsCardsData = [
     {
         name: 'GIANT PANDAS',
@@ -66,47 +68,6 @@ function init() {
     document.querySelector('.menu-checkbox').addEventListener('change', menuChange);
 
     document.querySelectorAll('.testimonial-card').forEach(card => card.addEventListener('click', showTestimonialPopup));
-}
-
-function menuChange(event) {
-    const checkbox = document.querySelector('.menu-checkbox');
-    if(checkbox.checked == true) {
-        const modal = addModal();
-        modal.addEventListener('click', () => {
-            checkbox.checked = false;
-            checkbox.dispatchEvent(new Event('change'));
-        });
-        disableScroll();
-    }
-    else {
-        removeModal();
-        enableScroll();
-    }
-}
-
-function addModal() {
-    document.body.insertAdjacentHTML('beforeend', '<div class="modal"></div>');
-    const modal = document.querySelector('.modal');
-    setTimeout(() => modal.classList.add('modal_show'), 0);
-    return modal;
-}
-
-function removeModal() {
-    const modal = document.querySelector('.modal');
-    modal.classList.remove('modal_show');
-    modal.addEventListener('transitionend', () => modal.remove());
-}
-
-function disableScroll() {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    window.onscroll = () => {
-        window.scrollTo(scrollLeft, scrollTop);
-    };
-}
-
-function enableScroll() {
-    window.onscroll = '';
 }
 
 function hideHighlitedMenuItem() {

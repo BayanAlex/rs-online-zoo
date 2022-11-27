@@ -83,7 +83,7 @@
                                             <label for="_250" class="pick__amount-label"><div class="pick__amount-dollar"></div>250</label>
                                         </div>
                                         <div class="pick__amount-item">
-                                            <input type="radio" id="_100" name="amount" value="100" class="pick__amount-radio">
+                                            <input type="radio" id="_100" name="amount" value="100" class="pick__amount-radio" checked>
                                             <label for="_100" class="pick__amount-label"><div class="pick__amount-dollar"></div>100</label>
                                         </div>
                                         <div class="pick__amount-item">
@@ -91,14 +91,14 @@
                                             <label for="_50" class="pick__amount-label"><div class="pick__amount-dollar"></div>50</label>
                                         </div>
                                         <div class="pick__amount-item">
-                                            <input type="radio" id="_25" name="amount" value="250" class="pick__amount-radio">
+                                            <input type="radio" id="_25" name="amount" value="25" class="pick__amount-radio">
                                             <label for="_25" class="pick__amount-label"><div class="pick__amount-dollar"></div>25</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="amount-input">
-                                <input type="number" placeholder="Another amount" min="0" max="9999" data-maxlength="4" oninput="this.value = this.value.slice(0, this.dataset.maxlength)" class="amount-input__input">
+                                <input type="number" placeholder="Another amount" min="0" max="9999" data-maxlength="4" value="100" class="amount-input__input">
                                 <div class="amount-input__dollar"></div>
                             </div>
                             <div class="pick__period">
@@ -167,6 +167,6 @@
 
 
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
