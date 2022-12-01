@@ -61,7 +61,7 @@ function init() {
     mediaSmallDesktop.addEventListener('change', () => {
         pertsCarouselInitCards();
     });
-    
+
     document.querySelectorAll('.main-menu__item').forEach(item => item.onclick = !item.classList.contains('main-menu__item_highlighted') ? hideHighlitedMenuItem : undefined);
     petsCarouselInit();
     testimonialsCarouselInit();
@@ -191,12 +191,7 @@ function showTestimonialPopup(event) {
     closeButton.src = 'assets/icons/x_icon.svg';
     closeButton.addEventListener('click', closePopup);
     popup.querySelector('.testimonial-card__content').append(closeButton);
-    const style = getComputedStyle(currentCard);
-    popup.style.top = currentCard.getBoundingClientRect().top + 'px';
-    popup.style.left = currentCard.getBoundingClientRect().left + 'px';
-    popup.style.width = style.width;
-    popup.style.height = style.height;
-    savedStyle = popup.getAttribute('style');
+    setPopup();
     document.body.append(popup);
     disableScroll();
     setTimeout(() => {
@@ -205,12 +200,20 @@ function showTestimonialPopup(event) {
     }, 0, {once: true});
 
     function closePopup() {
-        popup.setAttribute('style', savedStyle);
+        setPopup();
         removeModal();
         popup.classList.remove('testimonial-card_popup_show');
         popup.addEventListener('transitionend', () => {
             popup.remove();
             enableScroll();
         });
+    }
+
+    function setPopup() {
+        const style = getComputedStyle(currentCard);
+        popup.style.top = currentCard.getBoundingClientRect().top + 'px';
+        popup.style.left = currentCard.getBoundingClientRect().left + 'px';
+        popup.style.width = style.width;
+        popup.style.height = style.height;
     }
 }
