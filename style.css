@@ -795,11 +795,13 @@ h3 {
   justify-content: center;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1600px) {
   .section_pets {
     background-position: -192px 100%, bottom right;
     background-size: 386px 202px, 241px 180px;
   }
+}
+@media screen and (max-width: 1360px) {
   .pets__arrows {
     width: 294px;
     z-index: 2;
