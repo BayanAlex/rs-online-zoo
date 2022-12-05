@@ -801,6 +801,7 @@ h3 {
     background-size: 386px 202px, 241px 180px;
   }
 }
+
 @media screen and (max-width: 1360px) {
   .pets__arrows {
     width: 294px;
