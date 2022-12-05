@@ -81,6 +81,7 @@
         width: 100vw;
         transition: top 0.5s ease;
         background-color: #fff;
+        z-index: 3;
         .main-menu__list {
             display: flex;
             flex-direction: column;
