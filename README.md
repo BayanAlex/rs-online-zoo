@@ -8,3 +8,5 @@
 - Pixel perfect
   
 `HTML` `SCSS` `JavaScript` `Figma`  
+
+[![LINK](https://github.com/BayanAlex/portfolio/blob/main/img/zoo.png)](https://bayanalex.github.io/rs-online-zoo/)
