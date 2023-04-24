@@ -9,4 +9,8 @@
   
 `HTML` `SCSS` `JavaScript` `Figma`  
 
+<details>
+<summary>Screenshots</summary>
+
 [![LINK](https://github.com/BayanAlex/portfolio/blob/main/img/zoo.png)](https://bayanalex.github.io/rs-online-zoo/)
+</details>
